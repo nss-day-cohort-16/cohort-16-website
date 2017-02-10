@@ -1,0 +1,236 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(43, 133, 157);
+}
+
+#logo {
+  margin: 0 auto;
+  margin-top: -20vh;
+  max-width: 80%;
+}
+
+.top-content--header {
+  background-image: url('img/pic/2016_11_29_GC15_0070_T.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(43, 133, 157);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+  40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+#about-us {
+  text-shadow: 0 2px 2px #000;
+  display: block;
+  color: #fff;
+  font-size: 5em;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.meet-us--tiles {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ede8e2;
+  /*height: 30vh;*/
+  width: 100vw;
+  padding-top: 6%;
+}
+
+.meet-us--tiles h2 {
+  font-family: 'Bungee', sans-serif;
+  color: #b2a639;
+  font-size: 3em;
+
+}
+
+.person-tile {
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #292929;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.person-tile h3 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.person-tile img {
+  display: block;
+  margin: 0 auto;
+  max-height: 363.75px;
+  overflow: hidden;
+}
+
+.person-tile hr {
+  width: 40%;
+  border-color: #d8d8d8;
+}
+
+.tile--icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+.tile--icons a,
+.tile--icons img,
+.tile--icons span {
+  width: 50px;
+  display: block;
+}
+
+.technologies--content {
+  padding-top: 6%;
+  background-color: rgb(165, 170, 196);
+  padding-bottom: 3%;
+}
+
+#technologies {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  margin-bottom: 2%;
+}
+
+.technologies--content img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 10vh;
+  padding: 2%;
+  text-align: center;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer a {
+  color: #f1f1f1;
+}
+
+@keyframes animatedBackground {
+  from {
+    background: none;
+  }
+  to {
+    background: rgba(0,0,0,.6);
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.image-container .person-bio {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.image-container:hover .person-bio {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.75);
+  animation: animatedBackground 0.15s ease-out;
+}
+
+.person-bio {
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  color: #fff;
+  display: block;
+  font-weight: 200;
+  text-shadow: 0 1px 1px rgba(0,0,0,.85);
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 920px) {
+  .top-content--header {
+    max-height: 80vh;
+  }
+
+  .person-tile {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  #logo {
+    margin-top: -10vh;
+  }
+
+  .top-content--header {
+    max-height: 65vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .top-content--header {
+    max-height: 55vh;
+  }
+}
