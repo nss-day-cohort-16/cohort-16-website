@@ -178,10 +178,14 @@ footer a {
     max-height: 55vh;
   }
 }
-/*.person-image {
-  max-height: 363.75px;
-  overflow: hidden;
-}*/
+
+@media (min-width: 720px){
+  .person-image {
+    max-height: 280px;
+    overflow: hidden;
+  }
+}
+
 /*#cohort-bios {
   height: 100vh;
 }*/

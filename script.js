@@ -51,13 +51,6 @@ $(window).on('load', ()=>{
       })
     });
   }
-  $('#card_person').on('mouseenter', (event)=>{
-      console.log("Event", event);
-      $(this).find('> .card-image > img.activator').click();
-  })
-  $('.card').on('mouseleave', (event)=>{
-      $(this).find('> .card-reveal > .card-title').click();
-  });
   $('#search').keypress( (event)=>{
     if (event.which == 13){
       let search = $("#search").val();
@@ -74,22 +67,27 @@ $(window).on('load', ()=>{
     var found_bios = $.grep(list, (bio, index)=> {
           console.log(bio);
           if (bio.name.includes(search_query)){
-            console.log("bio", bio);
             return bio
           }
           if (bio.aboutMe.includes(search_query)){
             console.log("bio", bio);
-            return bio
           }
     });
     let $items = getItem(found_bios);
-    console.log($items);
     $('#cohort-bios').html('');
     $('#cohort-bios').html( $items );
   }
 });
 
-  
+$(document).ready( ()=>{
+  $('.card').on('mouseenter', (event)=>{
+      console.log("Event", event);
+      $(this).find('> .card-image > img.activator').click();
+  })
+  $('.card').on('mouseleave', (event)=>{
+      $(this).find('> .card-reveal > .card-title').click();
+  });
+}); 
 
 
 var guy = [
