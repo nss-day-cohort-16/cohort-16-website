@@ -18,7 +18,7 @@ $(window).on('load', ()=>{
     var list_of_people = '';
     $.each(items, (index, person)=>{
         list_of_people += `
-          <div class="card col s10 offset-s1 col m4 offset-m1 col l3 offset-l1">
+          <div id="card_person" class="card col s10 offset-s1 col m4 offset-m1 col l2 offset-l1">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator person-image" src="${person.professionalPic}" alt="${person.name}">
                <span class="card-title activator">${person.name}</i></span>
@@ -51,13 +51,13 @@ $(window).on('load', ()=>{
       })
     });
   }
-  $('.card').on('hover', (event)=>{
-    console.log("event", event);
-    $(this).find('> .card-image > img.activator').click();
-    }, function() {
+  $('#card_person').on('mouseenter', (event)=>{
+      console.log("Event", event);
+      $(this).find('> .card-image > img.activator').click();
+  })
+  $('.card').on('mouseleave', (event)=>{
       $(this).find('> .card-reveal > .card-title').click();
-    }
-  );
+  });
   $('#search').keypress( (event)=>{
     if (event.which == 13){
       let search = $("#search").val();
