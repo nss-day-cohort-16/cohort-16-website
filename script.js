@@ -10,7 +10,6 @@ $(window).on('load', ()=>{
   getItems().then( (response)=>{
     list = response;
     let $items = getItem(list);
-    console.log($items);
     $('#cohort-bios').html( $items );
     $('#cohort-bios').show();
   });
@@ -44,7 +43,6 @@ $(window).on('load', ()=>{
         Object.keys(response).forEach( (key)=>{
           users.push(response[key]);
         });
-        console.log("users", users);
         resolve(users[0]);
       }).fail(function(error) {
         reject(error);
@@ -65,12 +63,14 @@ $(window).on('load', ()=>{
   });
   function searchBios(search_query){
     var found_bios = $.grep(list, (bio, index)=> {
-          console.log(bio);
-          if (bio.name.includes(search_query)){
+          name = bio.name.toLowerCase();
+          aboutMe = bio.aboutMe.toLowerCase();
+          search_query = search_query.toLowerCase();
+          if (name.includes(search_query)){
             return bio
           }
-          if (bio.aboutMe.includes(search_query)){
-            console.log("bio", bio);
+          if (aboutMe.includes(search_query)){
+            return bio
           }
     });
     let $items = getItem(found_bios);
@@ -81,7 +81,6 @@ $(window).on('load', ()=>{
 
 $(document).ready( ()=>{
   $('.card').on('mouseenter', (event)=>{
-      console.log("Event", event);
       $(this).find('> .card-image > img.activator').click();
   })
   $('.card').on('mouseleave', (event)=>{
