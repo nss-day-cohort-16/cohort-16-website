@@ -1,3 +1,6 @@
+let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
+let partyFlag = false;
+
 $(document).ready(function () {
 
   // Click-to-scroll for animated arrow
@@ -7,6 +10,41 @@ $(document).ready(function () {
           'slow');
   });
 
+  // Party Mode Button
+  $('#party-mode').click((event) => {
+    let target = $(event.target);
+    if (partyFlag) {
+      partyModeOff(target);
+    } else {
+      partyModeOn(target);
+    }
+  });
+});
+
+
+function partyModeOn(target) {
+  target.attr("disabled", true);
+
+
+  partyFlag = true;
+  loadPage(partyFlag);
+  doges.play();
+  target.text('DISABLE PARTY MODE');
+  target.attr("disabled", false);
+}
+
+function partyModeOff(target) {
+  target.attr("disabled", true);
+
+
+
+  partyFlag = false;
+  doges.pause();
+  loadPage(partyFlag);
+  target.text('ENABLE PARTY MODE');
+  target.attr("disabled", false);
+}
+
 function checkWhitespace(name) {
   var counter = 0;
   var name = name.split('');
@@ -14,7 +52,7 @@ function checkWhitespace(name) {
     if (char === " ") {
     counter = counter + 1;
     }
-  })
+  });
   return counter;
 }
   // XHR to load class info from json file
@@ -26,17 +64,17 @@ function checkWhitespace(name) {
         resolve(response);
       }).fail(function(error) {
         reject(error);
-      })
+      });
     });
   }
 
   // Load the class info, load the DOM with cards
-  function loadPage() {
+  function loadPage(partyFlag) {
     getClassFromJson()
     .then(function (response) {
       var propertyName = Object.keys(response)[0];
       var infoArr = response[propertyName];
-      var cardString = generateCards(infoArr);
+      var cardString = generateCards(infoArr, partyFlag);
 
       attachCardsToDOM(cardString);
       // Auto-fix the bio div size
@@ -62,16 +100,22 @@ function checkWhitespace(name) {
         bio.style.width = imageWidth + 'px';
         bio.style.margin = '0 ' + marginValue + 'px';
       });
-    }
+    };
 
     img.src = firstImage.src;
   }
 
-  function generateCards(peopleArr) {
+  function generateCards(peopleArr, partyFlag) {
     return peopleArr.reduce(function(domString, person, i) {
+      let pictureChoice = '';
+      if (partyFlag) {
+        pictureChoice = person.personalityPic;
+      } else {
+        pictureChoice = person.professionalPic;
+      }
       domString += "<div class='col-sm-6 col-md-4 col-lg-3 person-tile'>" +
                    "<div class='image-container'>" +
-                      "<img class='person-image' src='" + person.professionalPic +
+                      "<img class='person-image' src='" + pictureChoice +
                         "' alt='" + person.name + "''>" +
                       "<div class='person-bio'><span>" + person.aboutMe + "</span></div>" +
                    "</div>" +
@@ -107,11 +151,12 @@ function checkWhitespace(name) {
   }
 
   function attachCardsToDOM(cardString) {
-    document.getElementById('meet-us--row').innerHTML = cardString;
+    meetUs = document.getElementById('meet-us--row');
+    meetUs.innerHTML = "";
+    meetUs.innerHTML = cardString;
   }
 
-  loadPage();
-});
+  loadPage(false);
 
 var guy = [
   "                                               `                  `",
@@ -298,3 +343,28 @@ var guy = [
   " @#######;'';;;;;;;;;;';';;;;;;;;;;';;',;,+,;###;+;####+'+':;'+##+';;;''''''''''''`######@#################################@@@#####################';`",
   " #######;;'';;;;;;;;;;;'''';;;;;;;;'';',,'':'+###;@:##;;++::;+###++;;;''''''''''''.#######@################################@@@######################;:",
 ].join("\n");
+
+function Sound(source,volume,loop)
+{
+    this.source=source;
+    this.volume=volume;
+    this.loop=loop;
+    var son;
+    this.son=son;
+    this.finish=false;
+    this.stop=function()
+    {
+        document.body.removeChild(this.son);
+    };
+    this.start=function()
+    {
+        if(this.finish)return false;
+        this.son=document.createElement("embed");
+        this.son.setAttribute("src",this.source);
+        this.son.setAttribute("hidden","true");
+        this.son.setAttribute("volume",this.volume);
+        this.son.setAttribute("autostart","true");
+        this.son.setAttribute("loop",this.loop);
+        document.body.appendChild(this.son);
+    };
+}
