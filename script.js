@@ -24,8 +24,6 @@ $(document).ready(function () {
 
 function partyModeOn(target) {
   target.attr("disabled", true);
-
-
   partyFlag = true;
   loadPage(partyFlag);
   doges.play();
@@ -35,9 +33,6 @@ function partyModeOn(target) {
 
 function partyModeOff(target) {
   target.attr("disabled", true);
-
-
-
   partyFlag = false;
   doges.pause();
   loadPage(partyFlag);
