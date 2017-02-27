@@ -1,117 +1,93 @@
-$(document).ready(function () {
-
+$(window).on('load', ()=>{
+  var list;
+  $('#cohort-bios').hide()
   // Click-to-scroll for animated arrow
   $('#about-us').click(function () {
       $('html,body').animate({
           scrollTop: $(".meet-us--tiles").offset().top},
           'slow');
   });
-
-function checkWhitespace(name) {
-  var counter = 0;
-  var name = name.split('');
-  name.forEach(function(char){
-    if (char === " ") {
-    counter = counter + 1;
-    }
-  })
-  return counter;
-}
-  // XHR to load class info from json file
-  function getClassFromJson() {
+  getItems().then( (response)=>{
+    list = response;
+    let $items = getItem(list);
+    $('#cohort-bios').html( $items );
+    $('#cohort-bios').show();
+  });
+  function getItem(items) {
+    var list_of_people = '';
+    $.each(items, (index, person)=>{
+        list_of_people += `
+          <div id="card_person" class="card col s10 offset-s1 col m4 offset-m1 col l2 offset-l1">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator person-image" src="${person.professionalPic}" alt="${person.name}">
+               <span class="card-title activator">${person.name}</i></span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+              <p><a href="${person.githubLink}"><i class="fa-github"></i></a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">${person.name}<i class="material-icons right">close</i></span>
+              <p>${person.aboutMe}</p>
+            </div>
+          </div>`
+    });
+    return $( list_of_people);
+  }
+  function getItems() {
     return new Promise(function (resolve, reject) {
       $.ajax({
         url: "classinfo.json",
       }).done(function(response) {
-        resolve(response);
+        let users = [];
+        Object.keys(response).forEach( (key)=>{
+          users.push(response[key]);
+        });
+        resolve(users[0]);
       }).fail(function(error) {
         reject(error);
       })
     });
   }
-
-  // Load the class info, load the DOM with cards
-  function loadPage() {
-    getClassFromJson()
-    .then(function (response) {
-      var propertyName = Object.keys(response)[0];
-      var infoArr = response[propertyName];
-      var cardString = generateCards(infoArr);
-
-      attachCardsToDOM(cardString);
-      // Auto-fix the bio div size
-      shrinkPersonBioDiv();
-      // Also resize them if the size of the browser changes
-      window.addEventListener('resize', shrinkPersonBioDiv, true);
-    });
-  }
-
-  function shrinkPersonBioDiv() {
-    // This will literally wait until the first image is loaded.
-    // Guys, this is crazy.
-    // Javascript 😍
-    var img = new Image();
-    var firstImage = document.querySelector('.person-image');
-
-    img.onload = function(){
-      var allPersonBios = document.querySelectorAll('.person-bio');
-      var firstImage = document.querySelector('.person-image');
-      var imageWidth = firstImage.offsetWidth;
-      var marginValue = firstImage.offsetLeft;
-      allPersonBios.forEach(function (bio) {
-        bio.style.width = imageWidth + 'px';
-        bio.style.margin = '0 ' + marginValue + 'px';
-      });
+  $('#search').keypress( (event)=>{
+    if (event.which == 13){
+      let search = $("#search").val();
+      searchBios(search);
+      $("#search").val("");
     }
-
-    img.src = firstImage.src;
+  });
+  $('#search-button').on("click", (event)=>{
+    let search = $("#search").val();
+    searchBios(search);
+    $("#search").val("");
+  });
+  function searchBios(search_query){
+    var found_bios = $.grep(list, (bio, index)=> {
+          name = bio.name.toLowerCase();
+          aboutMe = bio.aboutMe.toLowerCase();
+          search_query = search_query.toLowerCase();
+          if (name.includes(search_query)){
+            return bio
+          }
+          if (aboutMe.includes(search_query)){
+            return bio
+          }
+    });
+    let $items = getItem(found_bios);
+    $('#cohort-bios').html('');
+    $('#cohort-bios').html( $items );
   }
-
-  function generateCards(peopleArr) {
-    return peopleArr.reduce(function(domString, person, i) {
-      domString += "<div class='col-sm-6 col-md-4 col-lg-3 person-tile'>" +
-                   "<div class='image-container'>" +
-                      "<img class='person-image' src='" + person.professionalPic +
-                        "' alt='" + person.name + "''>" +
-                      "<div class='person-bio'><span>" + person.aboutMe + "</span></div>" +
-                   "</div>" +
-                   "<h3>";
-      if (person.name.includes("(")) {
-        domString += person.name.split(") ")[0] + ")<br/>" + person.name.split(") ")[1];
-      } 
-
-      else if (checkWhitespace(person.name) > 2) {
-        domString += person.name.split(" ")[0] + " " + person.name.split(" ")[1] + "<br/>" + person.name.split(" ")[2] + " " + person.name.split(" ")[3];
-      }
-
-      else {
-        domString += person.name.split(" ")[0] + "<br/>" + person.name.split(" ")[1];
-      }
-      domString += "</h3>" +
-                   "<hr>" +
-                   "<div class='tile--icons'>" +
-                       "<a href='" + person.githubLink + "' target='_blank'>" +
-                           "<img src='img/logo/Github.svg' alt='Github'/>" +
-                       "</a>" +
-                       "<a href='" + person.linkedInLink + "' target='_blank'>" +
-                           "<img src='img/icon/linkedin.svg' alt='Linkedin'/>" +
-                       "</a>" +
-                       "<a href='" + person.portfolioLink + "' target='_blank'>" +
-                           "<img src='img/icon/globe.svg' alt='Personal Website'/>" +
-                       "</a>" +
-                     "</div>" +
-                   "</div>";
-
-      return domString;
-    }, '');
-  }
-
-  function attachCardsToDOM(cardString) {
-    document.getElementById('meet-us--row').innerHTML = cardString;
-  }
-
-  loadPage();
 });
+
+$(document).ready( ()=>{
+  $('.card').on('mouseenter', (event)=>{
+      $(this).find('> .card-image > img.activator').click();
+  })
+  $('.card').on('mouseleave', (event)=>{
+      $(this).find('> .card-reveal > .card-title').click();
+  });
+}); 
+
 
 var guy = [
   "                                               `                  `",
