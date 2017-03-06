@@ -189,3 +189,33 @@ footer a {
 /*#cohort-bios {
   height: 100vh;
 }*/
+
+/*charts*/
+
+
+.charts--content {
+  padding: 3% 0;
+  background-color: #eee;
+  text-align: center;
+}
+
+.charts--content div.card-content {
+  height: 9em;
+}
+
+.charts--content .card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em !important;
+  color: #5a7c92;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.charts--content .kpi {
+  font-size: 3em;
+  line-height: 1.5em;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
