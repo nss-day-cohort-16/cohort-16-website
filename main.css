@@ -194,13 +194,13 @@ footer a {
 
 
 .charts--content {
-  padding: 3% 0;
+  padding: 1%;
   background-color: #eee;
   text-align: center;
 }
 
 .charts--content div.card-content {
-  height: 9em;
+  /*min-height: 9em;*/
 }
 
 .charts--content .card-title {
@@ -218,4 +218,9 @@ footer a {
   color: #666;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}
+
+.charts-row {
+  padding: 0;
+  margin: 0;
 }
