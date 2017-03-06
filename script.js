@@ -18,6 +18,8 @@ $(window).on('load', ()=>{
 
 $(document).ready(() => {
 
+  $('#stars').hide();
+
   $('#party-mode').show();
 
   $('#party-mode').click((event) => {
@@ -36,7 +38,8 @@ function partyModeOn(target) {
   target.attr("disabled", true);
   partyFlag = true;
   loadItems(partyFlag);
-  doges.play();
+  // doges.play();
+  $('#stars').show();
   target.text('DISABLE PARTY MODE');
   target.attr("disabled", false);
 }
@@ -46,6 +49,7 @@ function partyModeOff(target) {
   partyFlag = false;
   doges.pause();
   loadItems(partyFlag);
+  $('#stars').hide();
   target.text('ENABLE PARTY MODE');
   target.attr("disabled", false);
 }
