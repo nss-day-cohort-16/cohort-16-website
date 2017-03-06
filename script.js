@@ -2,9 +2,10 @@ let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
 let partyFlag = false;
 
 $(window).on('load', ()=>{
+  $(".button-collapse").sideNav();
   var list;
   $('#cohort-bios').hide();
-
+  changeFont("Roboto"); 
   loadItems(partyFlag);
   // Click-to-scroll for animated arrow
   $('#about-us').click(function () {
@@ -62,6 +63,7 @@ $(window).on('load', ()=>{
       let $items = getItem(list, partyFlag);
       $('#cohort-bios').html( $items );
       $('#cohort-bios').show();
+      cardHover();
     });
   }
   function getItem(items, partyFlag) {
@@ -135,23 +137,41 @@ $(window).on('load', ()=>{
     let $items = getItem(found_bios, partyFlag);
     $('#cohort-bios').html('');
     $('#cohort-bios').html( $items );
+    cardHover();
   }
-  $(document).ready( ()=>{
-    $('.card').hover(
+  function cardHover(){
+      $('.card').hover(
         function() {
             $(this).find('> .card-image > img.activator').click();
         }, function() {
             $(this).find('> .card-reveal > .card-title').click();
         }
-    );
+      );
+  }
+  function changeFont(FontName) {
+    if (FontName == 'Roboto'){
+      $('html').removeClass("funfont");
+      $('html').addClass("profont");
+    }
+    else {
+      $('html').removeClass("profont");
+      $('html').addClass("funfont");
+    }
+    
+    
+  }
+  $(document).ready( ()=>{
+    cardHover();
     $('#party-fab').click((event) => {
       let target = $(event.target);
       if (partyFlag == false) {
         partyFlag = true;
         loadItems(partyFlag);
+        changeFont("Spicy+Rice");
       } else {
         partyFlag = false;
         loadItems(partyFlag);
+        changeFont("Roboto"); 
       }
     });
    

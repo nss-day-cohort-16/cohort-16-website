@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cohort 15 | Nashville Software School</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Spicy+Rice" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div id="main-wrapper">
 
-      <div class="top-content--header">
+    <!-- Navigation Section -->
+    <div class="row" style="margin-bottom: 0px;">
+      <div class="navbar-fixed">
+        <nav style="background-color: rgba(255,255,255,0.8);">
+          <div class="nav-wrapper">
+            <ul id="main-nav" class="right hide-on-med-and-down center-align">
+              <li><a href="#search-bios">Search</a></li>
+              <li><a href="#cohort-bios">Bios</a></li>
+              <li><a href="#charts">Charts</a></li>
+              <li><a href="#tech">Technologies</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+              <li><a href="#search">Search</a></li>
+              <li><a href="#bios">Bios</a></li>
+              <li><a href="#charts">Charts</a></li>
+              <li><a href="#tech">Technologies</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse right-align"><i class="material-icons">menu</i></a>
+          </div>    
+        </nav>
+      </div>
+    </div>
+    
+
+    <div class="top-content--header">
         <img id="logo" src="img/cohort15.svg" alt="Cohort 15"/>
         <span id="about-us" class="bounce" aria-hidden="true"><i class="material-icons">keyboard_arrow_down</i></span>
       </div>
@@ -25,18 +51,20 @@
         </div> <!-- End of Fab -->
       </div>
       <div id="search-bios" class="row">
+        <div class="row">
         <div class="input-field col s6 offset-s1">
               <input id="search" type="text" placeholder="Search for a student ...">
               <label>Search for students</label>
         </div>
         <button id="search-button" class="waves-effect waves-light btn col s3 offset-s1 valign-wrapper">Search <i class="small material-icons">search</i></button>
+        </div>
       </div>
       <div class="container">
       <div id="cohort-bios" class="row">
       </div>
       </div>
 
-    <div class='technologies--content'>
+    <div id="tech" class='technologies--content'>
       <img src="img/technologies.svg" alt="Technologies" id="technologies"/>
         <div class="row">
           <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
