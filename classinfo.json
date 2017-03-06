@@ -3,20 +3,38 @@
     {
       "name": "Abby Fleming",
       "githubLink": "https://github.com/abbyfleming",
-      "portfolioLink": "",
+      "portfolioLink": "#",
       "linkedInLink": "linkedin.com.com/in/abbyfleming",
       "aboutMe": "I'm a wedding photographer turned full stack developer. Over a hundred weddings later, I'm looking forward to reclaiming my weekends! Coding allows me to be creative and analytical. ",
-      "professionalPic": "img/pic/2016_11_29_C15_0428_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0413_T.jpg"
+      "professionalPic": "img/pic/abbyPro.jpg",
+      "personalityPic": "img/pic/abbyFun.jpg"
     },
     {
-      "name": "Trent Hand",
-      "githubLink": "https://github.com/TrentHand",
-      "portfolioLink": "https://trenthand.github.io/",
-      "linkedInLink": "https://www.linkedin.com/in/trenthand/",
-      "aboutMe": "An inquisitive and outspoken teammate, always willing to learn and teach what he's picked up.  Lover of books, food, code, and all things nerdy.",
-      "professionalPic": "img/pic/2016_11_29_C15_0363_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0347_T.jpg"
+      "name": "Alex Simonian",
+      "githubLink": "https://github.com/asimonia",
+      "portfolioLink": "http://www.alexsimonian.com",
+      "linkedInLink": "#",
+      "aboutMe": "Fascinated with the notion of how self-reference and formal rules allow systems to acquire meaning despite being made of 'meaningless' elements. Oh, I also like coffee.",
+      "professionalPic": "img/pic/alexPro.jpg",
+      "personalityPic": "img/pic/alexFun.jpg"
+    },
+    {
+      "name": "Ali Kimbrell",
+      "githubLink": "https://github.com/alirk",
+      "portfolioLink": "http://www.debbiebourne.me",
+      "linkedInLink": "https://www.linkedin.com/in/akimbrell/",
+      "aboutMe": "It’s my joy in life to experiment, try new things, and explore possibilities. My time in account management brought such opportunities, for which I am forever grateful. Through working with international organizations, I was able to visit exciting places and get to know interesting people from all over the world. I found the innovation of bringing together clients’ ideas and a team’s imagination both thrilling and rewarding. What’s more, I was fascinated by this mysterious leap from conception to execution; there was always that point at which the ideas would go off to development and soon after had evolved into a real product. Over time I only grew more intrigued by what happens between idea and materialization. Being given the opportunity to find out for myself has been the most fulfilling endeavor of my career. Continually learning software development empowers me every day because through it, people come together in real and meaningful ways. Technology helps bridge gaps across geography and generations, and playing a part in that is both an adventure and a privilege.",
+      "professionalPic": "img/pic/aliPro.jpg",
+      "personalityPic": "img/pic/aliFun.jpg"
+    },
+    {
+      "name": "Ben Marks",
+      "githubLink": "https://github.com/Onodric",
+      "portfolioLink": "https://belvedmarks4.com",
+      "linkedInLink": "https://www.linkedin.com/in/belve-marks-211a79132/",
+      "aboutMe": "I am former welder, artist, actor, CAD operator, surveyor, and civil engineering technician. I love my wife, my daughters, my dogs, Nashville and solving new puzzles!",
+      "professionalPic": "img/pic/benPro.jpg",
+      "personalityPic": "img/pic/benFun.jpg"
     },
     {
       "name": "Dani Adkins",
@@ -24,35 +42,35 @@
       "portfolioLink": "www.danielleadkins.com",
       "linkedInLink": "www.linkedin.com/in/danielle-adkins-63212935",
       "aboutMe": "A lover of technology, travel, books and the outdoors. 'Awesome spontaneous dance moves' -Ike, C16; 'You're from Indiana. Shouldn't you be funny?' -Shawn, C16; 'Your docstrings are grand!' -Ben, C16",
-      "professionalPic": "img/pic/2016_11_29_C15_0402_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0381_T.jpg"
+      "professionalPic": "img/pic/daniPro.jpg",
+      "personalityPic": "img/pic/daniFun.jpg"
     },
     {
-      "name": "Matthew McCord",
-      "githubLink": "github.com/mccordgh",
-      "portfolioLink": "mccordgh.github.io",
-      "linkedInLink": "https://www.linkedin.com/in/mccordinator/",
-      "aboutMe": "I spent most of my post high school graduation time working on a career in music, while still keeping up on my coding hobby, and now I am going full force in to the world of software development.",
-      "professionalPic": "img/pic/2016_11_29_C15_0017_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0010_T.jpg"
+      "name": "Drew Martin",
+      "githubLink": "#",
+      "portfolioLink": "#",
+      "linkedInLink": "#",
+      "aboutMe": "I have always had a passion for problem-solving. Coming from an automotive repair background, coding is the perfect mixture of complex problem solving, and creative design. I find enjoyment out of taking a client's idea and making it come to life using code.",
+      "professionalPic": "img/pic/drewPro.jpg",
+      "personalityPic": "img/pic/drewFun.jpg"
     },
     {
-      "name": "Zoe LeBlanc",
-      "githubLink": "",
-      "portfolioLink": "zoeleblanc.com",
-      "linkedInLink": "https://www.linkedin.com/in/matthamil",
-      "aboutMe": "TBD",
-      "professionalPic": "img/pic/2016_11_29_C15_0113_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0100_T.jpg"
+      "name": "Ike Nwaelele",
+      "githubLink": "https://github.com/consumerike",
+      "portfolioLink": "#",
+      "linkedInLink": "https://www.linkedin.com/in/nwaelele",
+      "aboutMe": "To be fair, I'll do this this weekend. ",
+      "professionalPic": "img/pic/ikePro.jpg",
+      "personalityPic": "img/pic/ikeFun.jpg"
     },
     {
-      "name": "Richard Van Sickle",
-      "githubLink": "https://github.com/richievs91",
-      "portfolioLink": "",
-      "linkedInLink": "https://www.linkedin.com/in/richardvansickle/",
-      "aboutMe": "Former grad of the University of Tennessee-Knoxville. I worked in inside sales out of college only to find that was not the career path I wanted to head down. Coding has opened up a world of opportuni",
-      "professionalPic": "img/pic/2016_11_29_C15_0032_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0041_T.jpg"
+      "name": "Jack Pinkston",
+      "githubLink": "https://github.com/pinkston4",
+      "portfolioLink": "#",
+      "linkedInLink": "https://www.linkedin.com/in/jack-pinkston-59a96a135/",
+      "aboutMe": "Nashville based software developer with a passion for learning",
+      "professionalPic": "img/pic/jackPro.jpg",
+      "personalityPic": "img/pic/jackFun.jpg"
     },
     {
       "name": "Joey Kirby",
@@ -60,143 +78,151 @@
       "portfolioLink": "joeykirby.com",
       "linkedInLink": "https://www.linkedin.com/in/joey-kirby-5614a028/",
       "aboutMe": "A South African-born Canadian-American business magnate, investor, engineer, and inventor. Founder, CEO, and CTO of SpaceX; co-founder, CEO, and product architect of Tesla Inc.; co-founder and chairma",
-      "professionalPic": "img/pic/2016_11_29_C15_0251_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0241_T.jpg"
+      "professionalPic": "img/pic/joeyPro.jpg",
+      "personalityPic": "img/pic/joeyFun.jpg"
+    },
+    {
+      "name": "Julia Kim-Chung",
+      "githubLink": "#",
+      "portfolioLink": "juliakimchung.github.io ",
+      "linkedInLink": "www.linkedin.com/in/julia-kim-chung-a85502134/",
+      "aboutMe": "Previously having worked in the hospitality management, Absolutely thrilled to use problem solving skills with my mathematically driven logical sense in the programming every day",
+      "professionalPic": "img/pic/juliaPro.jpg",
+      "personalityPic": "img/pic/juliaFun.jpg"
+    },
+    {
+      "name": "LaDonna Sales",
+      "githubLink": "#",
+      "portfolioLink": "#",
+      "linkedInLink": "#",
+      "aboutMe": "LaDonna is a student of NSS, Cohort 16.",
+      "professionalPic": "img/pic/ladonnaPro.jpg",
+      "personalityPic": "img/pic/ladonnaFun.jpg"
+    },
+    {
+      "name": "Mark Ellis",
+      "githubLink": "https://github.com/markellisdev",
+      "portfolioLink": "http://www.markellisdev.com",
+      "linkedInLink": "https://www.linkedin.com/in/markellisdev",
+      "aboutMe": "Formerly a Video Crew Chief for many musicians/bands you probably recognize. I’m supplied by an endless determination and a love for problem solving. Application development feeds my curiosity.",
+      "professionalPic": "img/pic/markPro",
+      "personalityPic": "img/pic/markFun"
+    },
+    {
+      "name": "Matthew McCord",
+      "githubLink": "github.com/mccordgh",
+      "portfolioLink": "mccordgh.github.io",
+      "linkedInLink": "https://www.linkedin.com/in/mccordinator/",
+      "aboutMe": "I spent most of my post high school graduation time working on a career in music, while still keeping up on my coding hobby, and now I am going full force in to the world of software development.",
+      "professionalPic": "img/pic/mattPro.jpg",
+      "personalityPic": "img/pic/mattFun.jpg"
+    },
+    {
+      "name": "Nathan T. Baker",
+      "githubLink": "https://github.com/nathantbaker",
+      "portfolioLink": "http://nathantbaker.com",
+      "linkedInLink": "https://www.linkedin.com/in/nathantbaker/",
+      "aboutMe": "Nashville software engineer, President of Can Can Awards, and board game connoisseur.",
+      "professionalPic": "img/pic/natePro.jpg",
+      "personalityPic": "img/pic/nateFun.jpg"
+    },
+    {
+      "name": "Nick Chemsak",
+      "githubLink": "https://github.com/nchemsak",
+      "portfolioLink": "https://nchemsak.github.io/",
+      "linkedInLink": "https://www.linkedin.com/in/nick-chemsak/",
+      "aboutMe": "Automating audio recording processes while writing and producing the music soundtrack for two independent films is where I discovered coding as a new and exciting creative outlet that I wanted to pursue.  I am an avid painter and graphic designer, and just recently designed my first online art store, <a href='http://www.ephemeralwave.com/' target='_blank'>Ephemeral Wave</a>.  I also love playing drums, sequencing music, and spending time with my young son and wife!",
+      "professionalPic": "img/pic/nickPro.jpg",
+      "personalityPic": "img/pic/nickFun.jpg"
+    },
+    {
+      "name": "Peter Staggs",
+      "githubLink": "#",
+      "portfolioLink": "#",
+      "linkedInLink": "#",
+      "aboutMe": "#",
+      "professionalPic": "img/pic/petePro.jpg",
+      "personalityPic": "img/pic/peteFun.jpg"
+    },    {
+      "name": "Richard Whitfield",
+      "githubLink": "#",
+      "portfolioLink": "#",
+      "linkedInLink": "#",
+      "aboutMe": "#",
+      "professionalPic": "img/pic/richardPro.jpg",
+      "personalityPic": "img/pic/richardFun.jpg"
+    },
+    {
+      "name": "Richard Van Sickle",
+      "githubLink": "https://github.com/richievs91",
+      "portfolioLink": "#",
+      "linkedInLink": "https://www.linkedin.com/in/richardvansickle/",
+      "aboutMe": "Former grad of the University of Tennessee-Knoxville. I worked in inside sales out of college only to find that was not the career path I wanted to head down. Coding has opened up a world of opportunities and could not be happier with my decision to join NSS!",
+      "professionalPic": "img/pic/richievPro.jpg",
+      "personalityPic": "img/pic/richievFun.jpg"
+    },
+    {
+      "name": "Sam Phillips",
+      "githubLink": "https://github.com/samphillips1879",
+      "portfolioLink": "https://samcphillips.com",
+      "linkedInLink": "https://www.linkedin.com/in/samuel-phillips-634135134/",
+      "aboutMe": "Creativity enthusiast with exploratory tendencies and a passion for bringing new ideas to life.",
+      "professionalPic": "img/pic/samPro.jpg",
+      "personalityPic": "img/pic/samFun.jpg"
+    },
+    {
+      "name": "Shawn Paul Mitchell",
+      "githubLink": "#",
+      "portfolioLink": "#",
+      "linkedInLink": "#",
+      "aboutMe": "#",
+      "professionalPic": "img/pic/seanPro.jpg",
+      "personalityPic": "img/pic/seanFun.jpg"
     },
     {
       "name": "Steven Holmes",
       "githubLink": "http://www.github.com/stevenwally",
-      "portfolioLink": "",
-      "linkedInLink": "",
-      "aboutMe": "coming soon",
-      "professionalPic": "img/pic/2016_11_29_C15_0203_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0177_T.jpg"
+      "portfolioLink": "http://www.stevenwholmes.com/",
+      "linkedInLink": "https://www.linkedin.com/in/stevenwholmes",
+      "aboutMe": "10 years spent living in the Philippines, 10 years spent as a professional musician. Penchant for design, learning & efficient systems. Early on at NSS, I had a dream in Javascript, and things haven't been the same since.",
+      "professionalPic": "img/pic/stevenPro.jpg",
+      "personalityPic": "img/pic/stevenFun.jpg"
     },
     {
-      "name": "Ike Nwaelele",
-      "githubLink": "https://github.com/consumerike",
-      "portfolioLink": "",
-      "linkedInLink": "https://www.linkedin.com/in/nwaelele",
-      "aboutMe": "To be fair, I'll do this this weekend. ",
-      "professionalPic": "img/pic/2016_11_29_C15_0162_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0156_T.jpg"
+      "name": "Trent Hand",
+      "githubLink": "https://github.com/TrentHand",
+      "portfolioLink": "https://trenthand.github.io/",
+      "linkedInLink": "https://www.linkedin.com/in/trenthand/",
+      "aboutMe": "An inquisitive and outspoken teammate, always willing to learn and teach what he's picked up.  Lover of books, food, code, and all things nerdy.",
+      "professionalPic": "img/pic/trentPro.jpg",
+      "personalityPic": "img/pic/trentFun.jpg"
     },
     {
-      "name": "David Yunker",
-      "githubLink": "https://github.com/davidyunker",
-      "portfolioLink": "https://davidyunker.github.io/",
-      "linkedInLink": "http://www.linkedin.com/in/david-yunker",
-      "aboutMe": "I’m a news junkie and former journalist who’s driven to always find the answer and to solve problems. In my spare time, I'm driven to find quality beer, quality shows and quality time with my cats.",
-      "professionalPic": "img/pic/2016_11_29_C15_0465_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0457_T.jpg"
+      "name": "Whitney Cormack",
+      "githubLink": "github.com/whitneycormack",
+      "portfolioLink": "WhitneyCormack.github.io",
+      "linkedInLink": "https://www.linkedin.com/in/whitneycormack",
+      "aboutMe": "#",
+      "professionalPic": "img/pic/whiteyPro.jpg",
+      "personalityPic": "img/pic/whitneyFun.jpg"
     },
     {
-      "name": "Debbie Bourne",
-      "githubLink": "https://github.com/HubDub",
-      "portfolioLink": "http://www.debbiebourne.me",
-      "linkedInLink": "https://www.linkedin.com/in/debbie-bourne-7a54a1105",
-      "aboutMe": "With a background in Psychology and historic site administration, I'm fascinated by how technology improves our lives. I want to build apps that help us be better people.",
-      "professionalPic": "img/pic/2016_11_29_C15_0522_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0488_T.jpg"
+      "name": "Zachary Cline",
+      "githubLink": "#",
+      "portfolioLink": "#",
+      "linkedInLink": "#",
+      "aboutMe": "#",
+      "professionalPic": "img/pic/zachPro.jpg",
+      "personalityPic": "img/pic/zachFun.jpg"
     },
     {
-      "name": "Meg Ducharme",
-      "githubLink": "https://github.com/megducharme",
-      "portfolioLink": "https://megducharme.github.io/",
-      "linkedInLink": "https://www.linkedin.com/in/megducharme",
-      "aboutMe": "I'm a junior developer passionate about the way technology empowers and enables us to pursue our dreams, and in 2016 I pivoted my life, attended a six month programming bootcamp, and am now working to build software that empowers others.",
-      "professionalPic": "img/pic/2016_11_29_C15_0287_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0272_T.jpg"
+      "name": "Zoe LeBlanc",
+      "githubLink": "",
+      "portfolioLink": "zoeleblanc.com",
+      "linkedInLink": "#",
+      "aboutMe": "TBD",
+      "professionalPic": "img/pic/zoeyPro.jpg",
+      "personalityPic": "img/pic/zoeyFun.jpg"
     },
-    {
-      "name": "Zack Repass",
-      "githubLink": "https://github.com/thrashMoneyVillainare",
-      "portfolioLink": "http://www.zackrepass.com",
-      "linkedInLink": "https://www.linkedin.com/in/zack-repass-517b1420",
-      "aboutMe": "A native Nashvillian with a big picture mindset excited by new ideas and the possibilities presented to us by new tools and technologies. With a desire to build people up, I am excited to join an industry that can inspire people through technology to be their best self.",
-      "professionalPic": "img/pic/2016_11_29_C15_0636_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0663_T.jpg"
-    },
-    {
-      "name": "Anulfo Ordaz",
-      "githubLink": "https://github.com/Anulfo",
-      "portfolioLink": "https://anulfo.me",
-      "linkedInLink": "https://www.linkedin.com/in/anulfo-ordaz-431993120",
-      "aboutMe": "I'm former Venezuelan surgeon with a strong inclination for Software Development. Service to others is the only way to improve society, being true to that ideal is my motivation",
-      "professionalPic": "img/pic/2016_11_29_C15_0573_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0596_T.jpg"
-    },
-    {
-      "name": "Edgar Barajas",
-      "githubLink": "https://github.com/interlink3d",
-      "portfolioLink": "http://edgarbarajas.com",
-      "linkedInLink": "https://www.linkedin.com/in/edgar-barajas-interlink3d",
-      "aboutMe": "Approach life with a student mentality and the aspiration of one day becoming the teacher is my MO. I consider myself a well rounded individual who can hold my own in any environment I am thrown into.",
-      "professionalPic": "img/pic/2016_11_29_C15_0230_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0212_T.jpg"
-    },
-    {
-      "name": "Yonatan Molla",
-      "githubLink": "https://github.com/jhoni4",
-      "portfolioLink": "http://yonata.com",
-      "linkedInLink": "https://www.linkedin.com/in/yonatan-molla-15a77598",
-      "aboutMe": "A former Agro-Mechanization Engineer becoming a Software Developer Excited by new technologies.",
-      "professionalPic": "img/pic/2016_11_29_C15_0307_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0309_T.jpg"
-    },
-    {
-      "name": "Delaine Wendling",
-      "githubLink": "https://github.com/delainewendling",
-      "portfolioLink": "http://delainewendling.com",
-      "linkedInLink": "https://www.linkedin.com/in/delaine-wendling-3336392b",
-      "aboutMe": "I love software development because there is always a problem to be solved. I get excited about software that helps make the world a better place, used bookstores, and climbing mountains.",
-      "professionalPic": "img/pic/2016_11_29_C15_0060_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0051_T.jpg"
-    },
-    {
-      "name": "Fletcher Bangs Watson VI",
-      "githubLink": "https://github.com/flawavi",
-      "portfolioLink": "http://fletcherbangs.me",
-      "linkedInLink": "https://www.linkedin.com/in/fletcherbangs",
-      "aboutMe": "As a Nashville native, I want to combine my skills as a developer with my natural abilities to speak, write and network to make Nashville the jewel of the south. That might mean putting up with me listening to Steely Dan and disco while I code.",
-      "professionalPic": "img/pic/2016_11_29_C15_0558_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0534_T.jpg"
-    },
-    {
-      "name": "Dayne Wright",
-      "githubLink": "https://github.com/daynewright",
-      "portfolioLink": "http://dayne.me",
-      "linkedInLink": "https://www.linkedin.com/in/wrightdayne",
-      "aboutMe": "I am a Nashville native that started exploring software development while working in project management at a few startups. I discovered that I love the logic, problem solving and challenge involved and have not turned back!",
-      "professionalPic": "img/pic/2016_11_29_C15_0142_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0127_T.jpg"
-    },
-    {
-      "name": "Jacob Keen",
-      "githubLink": "https://github.com/jaclkeen",
-      "portfolioLink": "https://jaclkeen.github.io/",
-      "linkedInLink": "https://www.linkedin.com/in/jacob-keen-293a27111",
-      "aboutMe": "A former college student with a love for building things and problem solving. In my free time, I enjoy all things sports and building amazing software.",
-      "professionalPic": "img/pic/2016_11_29_C15_0324_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0328_T.jpg"
-    },
-    {
-      "name": "Elliott Williams",
-      "githubLink": "https://github.com/ewilliamswtn",
-      "portfolioLink": "http://elliottwilliams.me",
-      "linkedInLink": "https://www.linkedin.com/in/elliott-williams",
-      "aboutMe": "I'm just a human who enjoys technology and the way it is reshaping our world; I couldn't be more excited to contribute to the process. I enjoy learning and can become fascinated by anything. Travel, books, and podcasts are my favorite mediums of satisfying my curiosity.",
-      "professionalPic": "img/pic/2016_11_29_C15_0667_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0691_T.jpg"
-    },
-    {
-      "name": "Jammy Laird",
-      "githubLink": "https://github.com/lairdhousedhold",
-      "portfolioLink": "https://www.jammylaird.com",
-      "linkedInLink": "https://www.linkedin.com/in/jammy-laird-2116a1125",
-      "aboutMe": "I believe coding can solve the problems of the world through common sense innovation...Pancakes ",
-      "professionalPic": "img/pic/2016_11_29_C15_0614_T.jpg",
-      "personalityPic": "img/pic/2016_11_29_C15_0628_T.jpg"
-    }
   ]
 }
