@@ -1,38 +1,20 @@
-let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
-let partyFlag = false;
+// let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
+let partyFlag = false; //Set initial settings
 
 $(window).on('load', ()=>{
-  $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav(); //Initializes side nav
   var list;
   $('#cohort-bios').hide();
-  changeFont("Roboto"); 
-  loadItems(partyFlag);
+  changeFont("Roboto"); //Initializes font
+  loadItems(partyFlag); //load images
+
   // Click-to-scroll for animated arrow
   $('#about-us').click(function () {
       $('html,body').animate({
-          scrollTop: $(".meet-us--tiles").offset().top},
+          scrollTop: $("#search-bios").offset().top},
           'slow');
   });
 
-  // Party Mode Button
-
-// function partyModeOn(target) {
-//   target.attr("disabled", true);
-//   partyFlag = true;
-//   loadItems(partyFlag);
-//   // doges.play();
-//   target.text('DISABLE PARTY MODE');
-//   target.attr("disabled", false);
-// }
-
-// function partyModeOff(target) {
-//   target.attr("disabled", true);
-//   partyFlag = false;
-//   doges.pause();
-//   loadItems(partyFlag);
-//   target.text('ENABLE PARTY MODE');
-//   target.attr("disabled", false);
-// }
   function partyMode(target){
     if (target == false){
         $('.tooltipped').tooltip('remove');

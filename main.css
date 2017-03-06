@@ -206,3 +206,10 @@ nav, .btn {
 #sidenav-overlay {
     z-index: 1;
 }
+.brand-logo {
+  color: black;
+  text-transform: uppercase;
+}
+#search-bios {
+  height: 15vh
+}
