@@ -74,7 +74,7 @@ $(window).on('load', ()=>{
           pictureChoice = person.professionalPic;
         }
         list_of_people += `
-          <div id="card_person" class="col s10 offset-s1 col m4 offset-m1 col l3 offset-l1">
+          <div id="card_person" class="col s10 offset-s1 col m4 offset-m1 col l3">
             <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator person-image" src="${pictureChoice}" alt="${person.name}">
