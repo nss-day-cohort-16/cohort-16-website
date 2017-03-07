@@ -1,57 +1,44 @@
-let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
-let partyFlag = false;
+// let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
+let partyFlag = false; //Set initial settings
 
 $(window).on('load', ()=>{
+  $(".button-collapse").sideNav(); //Initializes side nav
   var list;
   $('#cohort-bios').hide();
+  changeFont("Roboto"); //Initializes font
+  loadItems(partyFlag); //load images
 
-  loadItems(partyFlag);
   // Click-to-scroll for animated arrow
   $('#about-us').click(function () {
       $('html,body').animate({
-          scrollTop: $(".meet-us--tiles").offset().top},
+          scrollTop: $("#search-bios").offset().top},
           'slow');
   });
 
-  // Party Mode Button
-
-// function partyModeOn(target) {
-//   target.attr("disabled", true);
-//   partyFlag = true;
-//   loadItems(partyFlag);
-//   // doges.play();
-//   target.text('DISABLE PARTY MODE');
-//   target.attr("disabled", false);
-// }
-
-// function partyModeOff(target) {
-//   target.attr("disabled", true);
-//   partyFlag = false;
-//   doges.pause();
-//   loadItems(partyFlag);
-//   target.text('ENABLE PARTY MODE');
-//   target.attr("disabled", false);
-// }
   function partyMode(target){
+    
     if (target == false){
-        $('.tooltipped').tooltip('remove');
-        $('#party-fab').html('')
-        $('#party-fab').html(`<a id="party-on" class="btn-floating btn-large indigo accent-1 tooltipped"  data-position="top" data-delay="50" data-tooltip="Time to party?"><i class="large material-icons">cake</i>
-          </a>`)
-        $(".tooltipped").each(function(event) {
-            console.log(event);        
-            $(this).tooltip();
-        });
+      $('.top-content--header').css('background-image', "url('img/pic/16Pro.jpg')");
+      $('.tooltipped').tooltip('remove');
+      $('#party-fab').html('')
+      $('#party-fab').html(`<a id="party-on" class="btn-floating btn-large indigo accent-1 tooltipped"  data-position="top" data-delay="50" data-tooltip="Time to party?"><i class="large material-icons">cake</i>
+        </a>`)
+      $(".tooltipped").each(function(event) {
+          console.log(event);        
+          $(this).tooltip();
+      });
+
     }
     else {
-        $('.tooltipped').tooltip('remove');
-        $('#party-fab').html('')
-        $('#party-fab').html(`<a id="party-off" class="btn-floating btn-large pink accent-1 tooltipped"  data-position="left" data-delay="50" data-tooltip="Too much party?"><i class="large material-icons">school</i>
-          </a>`)
-        $(".tooltipped").each(function(event) {
-            console.log(event);        
-            $(this).tooltip();
-        });
+      $('.top-content--header').css('background-image', "url('img/pic/16Party.jpg')");
+      $('.tooltipped').tooltip('remove');
+      $('#party-fab').html('')
+      $('#party-fab').html(`<a id="party-off" class="btn-floating btn-large pink accent-1 tooltipped"  data-position="left" data-delay="50" data-tooltip="Too much party?"><i class="large material-icons">school</i>
+        </a>`)
+      $(".tooltipped").each(function(event) {
+          console.log(event);        
+          $(this).tooltip();
+      });
     }
 }
   // XHR to load class info from json file
@@ -62,6 +49,7 @@ $(window).on('load', ()=>{
       let $items = getItem(list, partyFlag);
       $('#cohort-bios').html( $items );
       $('#cohort-bios').show();
+      cardHover();
     });
   }
   function getItem(items, partyFlag) {
@@ -98,12 +86,14 @@ $(window).on('load', ()=>{
       $.ajax({
         url: "classinfo.json",
       }).done(function(response) {
+        console.log(response);
         let users = [];
         Object.keys(response).forEach( (key)=>{
           users.push(response[key]);
         });
         resolve(users[0]);
       }).fail(function(error) {
+        console.log(error);
         reject(error);
       });
     });
@@ -135,23 +125,41 @@ $(window).on('load', ()=>{
     let $items = getItem(found_bios, partyFlag);
     $('#cohort-bios').html('');
     $('#cohort-bios').html( $items );
+    cardHover();
   }
-  $(document).ready( ()=>{
-    $('.card').hover(
+  function cardHover(){
+      $('.card').hover(
         function() {
             $(this).find('> .card-image > img.activator').click();
         }, function() {
             $(this).find('> .card-reveal > .card-title').click();
         }
-    );
+      );
+  }
+  function changeFont(FontName) {
+    if (FontName == 'Roboto'){
+      $('html').removeClass("funfont");
+      $('html').addClass("profont");
+    }
+    else {
+      $('html').removeClass("profont");
+      $('html').addClass("funfont");
+    }
+    
+    
+  }
+  $(document).ready( ()=>{
+    cardHover();
     $('#party-fab').click((event) => {
       let target = $(event.target);
       if (partyFlag == false) {
         partyFlag = true;
         loadItems(partyFlag);
+        changeFont("Spicy+Rice");
       } else {
         partyFlag = false;
         loadItems(partyFlag);
+        changeFont("Roboto"); 
       }
     });
    

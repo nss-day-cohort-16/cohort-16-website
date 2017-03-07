@@ -3,7 +3,13 @@ body {
   height: 100%;
   background-color: white;
 }
+.profont {
+  font-family: 'Roboto';
+}
 
+.funfont {
+  font-family: 'Spicy Rice', cursive;
+}
 #logo {
   margin: 0 auto;
   margin-top: -20vh;
@@ -11,7 +17,6 @@ body {
 }
 
 .top-content--header {
-  background-image: url('img/serious_group.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -179,14 +184,31 @@ footer a {
   }
 }
 
-@media (min-width: 720px){
-  /*.person-image {
-    max-height: 280px;
-    overflow: hidden;
-    max-width: auto;
-  }
-*/}
-
-/*#cohort-bios {
-  height: 100vh;
-}*/
+nav ul a {
+    color: #000;
+}
+nav ul li a:hover {
+    color: #ab47bc;
+    background-color: white;
+}
+nav ul li:hover {
+   background-color: white;
+}
+nav .button-collapse i {
+    color: #000; 
+}
+nav, .btn {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#sidenav-overlay {
+    z-index: 1;
+}
+.brand-logo {
+  color: black;
+  text-transform: uppercase;
+}
+#search-bios {
+  height: 15vh
+}

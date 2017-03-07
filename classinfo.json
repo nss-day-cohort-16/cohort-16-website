@@ -105,8 +105,8 @@
       "portfolioLink": "http://www.markellisdev.com",
       "linkedInLink": "https://www.linkedin.com/in/markellisdev",
       "aboutMe": "Formerly a Video Crew Chief for many musicians/bands you probably recognize. I’m supplied by an endless determination and a love for problem solving. Application development feeds my curiosity.",
-      "professionalPic": "img/pic/markPro",
-      "personalityPic": "img/pic/markFun"
+      "professionalPic": "img/pic/markPro.jpg",
+      "personalityPic": "img/pic/markFun.jpg"
     },
     {
       "name": "Matthew McCord",
@@ -203,7 +203,7 @@
       "portfolioLink": "WhitneyCormack.github.io",
       "linkedInLink": "https://www.linkedin.com/in/whitneycormack",
       "aboutMe": "#",
-      "professionalPic": "img/pic/whiteyPro.jpg",
+      "professionalPic": "img/pic/whitneyPro.jpg",
       "personalityPic": "img/pic/whitneyFun.jpg"
     },
     {
@@ -221,8 +221,8 @@
       "portfolioLink": "zoeleblanc.com",
       "linkedInLink": "#",
       "aboutMe": "TBD",
-      "professionalPic": "img/pic/zoeyPro.jpg",
-      "personalityPic": "img/pic/zoeyFun.jpg"
-    },
+      "professionalPic": "img/pic/zoePro.jpg",
+      "personalityPic": "img/pic/zoeFun.jpg"
+    }
   ]
 }
