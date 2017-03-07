@@ -126,6 +126,7 @@ $(window).on('load', ()=>{
 
 
   $(document).ready( ()=>{
+    make_it_rain();
     $('#stars').hide();
     $('.card').hover(
         function() {
@@ -138,7 +139,6 @@ $(window).on('load', ()=>{
       let target = $(event.target);
       if (partyFlag == false) {
         partyFlag = true;
-        make_it_rain();
         $('#stars').show();
         loadItems(partyFlag);
       } else {
@@ -177,6 +177,8 @@ make_it_rain = () => {
   let insertPoint = $('#stars');
   for (let i = 0; i < 40; i++){
     let rotateDeg = Math.random() * 90;
+    let sizeShape = Math.random() * 20 + 10;
+    let durationTime = Math.random() * 10 + 10;
     rotateDeg = rotateDeg + 'deg';
     let placeMent = Math.random() * 100;
     placeMent = placeMent + 'vw';
@@ -184,20 +186,21 @@ make_it_rain = () => {
     let greenColor = Math.floor(Math.random() * 255);
     let blueColor = Math.floor(Math.random() * 255);
     let newStar = document.createElement('div');
-    newStar.css({
-      'position': relative,
-      'left': placeMent,
-      'color': rgb(redColor, greenColor, blueColor),
-      'width': 40px,
-      'height': 40px,
-      '-moz-transform': rotate(rotateDeg),
-      '-webkit-transform': rotate(rotateDeg),
-      '-ms-transform': rotate(rotateDeg),
-      '-o-transform': rotate(rotateDeg),
-      'transform': rotate(rotateDeg),
-      '-webkit-animation': moveStars 13s linear infinite,
-      '-moz-animation': moveStars 13s linear infinite,
-      '-o-animation': moveStars 13s linear infinite
-    })
+    Object.assign(newStar.style, {
+      'position': 'relative',
+      'left': `${placeMent}`,
+      'color': `rgb(${redColor}, ${greenColor}, ${blueColor})`,
+      'width': `${sizeShape}px`,
+      'height': `${sizeShape}px`,
+      '-moz-transform': `rotate(${rotateDeg})`,
+      '-webkit-transform': `rotate(${rotateDeg})`,
+      '-ms-transform': `rotate(${rotateDeg})`,
+      '-o-transform': `rotate(${rotateDeg})`,
+      'transform': `rotate(${rotateDeg})`,
+      '-webkit-animation': `moveStars ${durationTime}s linear infinite`,
+      '-moz-animation': `moveStars ${durationTime}s linear infinite`,
+      '-o-animation': `moveStars ${durationTime}s linear infinite`
+    });
+    insertPoint.append(newStar);
   }
 };
