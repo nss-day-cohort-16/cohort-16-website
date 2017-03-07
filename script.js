@@ -51,29 +51,29 @@ $(window).on('load', ()=>{
   function getItem(items, partyFlag) {
     var list_of_people = '';
     $.each(items, (index, person)=>{
-        let pictureChoice = '';
-        if (partyFlag) {
-          pictureChoice = person.personalityPic;
-        } else {
-          pictureChoice = person.professionalPic;
-        }
-        list_of_people += `
-          <div id="card_person" class="col s10 offset-s1 col m4 offset-m1 col l3">
-            <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator person-image" src="${pictureChoice}" alt="${person.name}">
-               <span class="card-title activator">${person.name}</i></span>
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
-              <p><a href="${person.githubLink}"><i class="fa fa-github fa-lg"></i></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">${person.name}<i class="material-icons right">close</i></span>
-              <p>${person.aboutMe}</p>
-            </div>
-            </div>
-          </div>`;
+      let pictureChoice = '';
+      if (partyFlag) {
+        pictureChoice = person.personalityPic;
+      } else {
+        pictureChoice = person.professionalPic;
+      }
+      list_of_people += `
+        <div id="card_person" class="col s10 offset-s1 col m4 offset-m1 col l3">
+          <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator person-image" src="${pictureChoice}" alt="${person.name}">
+             <span class="card-title activator">${person.name}</i></span>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+            <p><a href="${person.githubLink}"><i class="fa fa-github fa-lg"></i></a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">${person.name}<i class="material-icons right">close</i></span>
+            <p>${person.aboutMe}</p>
+          </div>
+          </div>
+        </div>`;
     });
     return $( list_of_people);
   }
@@ -138,6 +138,7 @@ $(window).on('load', ()=>{
       let target = $(event.target);
       if (partyFlag == false) {
         partyFlag = true;
+        make_it_rain();
         $('#stars').show();
         loadItems(partyFlag);
       } else {
@@ -171,3 +172,32 @@ function Sound(source,volume,loop){
         document.body.appendChild(this.son);
     };
 }
+
+make_it_rain = () => {
+  let insertPoint = $('#stars');
+  for (let i = 0; i < 40; i++){
+    let rotateDeg = Math.random() * 90;
+    rotateDeg = rotateDeg + 'deg';
+    let placeMent = Math.random() * 100;
+    placeMent = placeMent + 'vw';
+    let redColor = Math.floor(Math.random() * 255);
+    let greenColor = Math.floor(Math.random() * 255);
+    let blueColor = Math.floor(Math.random() * 255);
+    let newStar = document.createElement('div');
+    newStar.css({
+      'position': relative,
+      'left': placeMent,
+      'color': rgb(redColor, greenColor, blueColor),
+      'width': 40px,
+      'height': 40px,
+      '-moz-transform': rotate(rotateDeg),
+      '-webkit-transform': rotate(rotateDeg),
+      '-ms-transform': rotate(rotateDeg),
+      '-o-transform': rotate(rotateDeg),
+      'transform': rotate(rotateDeg),
+      '-webkit-animation': moveStars 13s linear infinite,
+      '-moz-animation': moveStars 13s linear infinite,
+      '-o-animation': moveStars 13s linear infinite
+    })
+  }
+};
