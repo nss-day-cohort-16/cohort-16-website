@@ -16,25 +16,29 @@ $(window).on('load', ()=>{
   });
 
   function partyMode(target){
+    
     if (target == false){
-        $('.tooltipped').tooltip('remove');
-        $('#party-fab').html('')
-        $('#party-fab').html(`<a id="party-on" class="btn-floating btn-large indigo accent-1 tooltipped"  data-position="top" data-delay="50" data-tooltip="Time to party?"><i class="large material-icons">cake</i>
-          </a>`)
-        $(".tooltipped").each(function(event) {
-            console.log(event);        
-            $(this).tooltip();
-        });
+      $('.top-content--header').css('background-image', "url('img/pic/16Pro.jpg')");
+      $('.tooltipped').tooltip('remove');
+      $('#party-fab').html('')
+      $('#party-fab').html(`<a id="party-on" class="btn-floating btn-large indigo accent-1 tooltipped"  data-position="top" data-delay="50" data-tooltip="Time to party?"><i class="large material-icons">cake</i>
+        </a>`)
+      $(".tooltipped").each(function(event) {
+          console.log(event);        
+          $(this).tooltip();
+      });
+
     }
     else {
-        $('.tooltipped').tooltip('remove');
-        $('#party-fab').html('')
-        $('#party-fab').html(`<a id="party-off" class="btn-floating btn-large pink accent-1 tooltipped"  data-position="left" data-delay="50" data-tooltip="Too much party?"><i class="large material-icons">school</i>
-          </a>`)
-        $(".tooltipped").each(function(event) {
-            console.log(event);        
-            $(this).tooltip();
-        });
+      $('.top-content--header').css('background-image', "url('img/pic/16Party.jpg')");
+      $('.tooltipped').tooltip('remove');
+      $('#party-fab').html('')
+      $('#party-fab').html(`<a id="party-off" class="btn-floating btn-large pink accent-1 tooltipped"  data-position="left" data-delay="50" data-tooltip="Too much party?"><i class="large material-icons">school</i>
+        </a>`)
+      $(".tooltipped").each(function(event) {
+          console.log(event);        
+          $(this).tooltip();
+      });
     }
 }
   // XHR to load class info from json file
@@ -82,12 +86,14 @@ $(window).on('load', ()=>{
       $.ajax({
         url: "classinfo.json",
       }).done(function(response) {
+        console.log(response);
         let users = [];
         Object.keys(response).forEach( (key)=>{
           users.push(response[key]);
         });
         resolve(users[0]);
       }).fail(function(error) {
+        console.log(error);
         reject(error);
       });
     });
