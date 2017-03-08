@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="gray.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" href="main.css">
+    <link href="charts/css/d3.geomap.css" rel="stylesheet">
   </head>
   <body>
     <div id="main-wrapper">
@@ -131,7 +132,7 @@
                     <div class="card">
                       <div class="card-content">
                         <div class="card-title">Countries Visited</div>
-                        <div class="kpi">map</div>
+                        <div id="map"></div>
                       </div>
                     </div>
                   </div>
@@ -256,6 +257,10 @@
   <script src="https://npmcdn.com/jquery-gray@1.5.0/js/jquery.gray.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <script src="script.js"></script>
+  <!-- charts -->
+  <script src="charts/vendor/d3.geomap.dependencies.min.js"></script>
+  <script src="charts/js/d3.geomap.min.js"></script>
+  <script src="charts/charts.js"></script>
 
   </body>
 </html>
