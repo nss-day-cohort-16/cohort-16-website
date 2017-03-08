@@ -188,7 +188,7 @@ nav ul a {
     color: #000;
 }
 nav ul li a:hover {
-    color: #ab47bc;
+    color: #6e6cb0;
     background-color: white;
 }
 nav ul li:hover {
@@ -211,4 +211,10 @@ nav, .btn {
 }
 #search-bios {
   height: 15vh
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+    color: grey;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{
+    color: #6e6cb0;
 }
