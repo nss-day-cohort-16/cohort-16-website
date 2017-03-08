@@ -10,10 +10,16 @@ body {
 .funfont {
   font-family: 'Spicy Rice', cursive;
 }
-#logo {
+
+#main-logo,
+#party-logo {
   margin: 0 auto;
-  margin-top: -20vh;
-  max-width: 80%;
+  margin-top: -15vh;
+  width: 80%;
+}
+
+.hidden {
+  display: none;
 }
 
 .top-content--header {
@@ -184,9 +190,80 @@ footer a {
   }
 }
 
+/*Lets start with the cloud formation rather*/
+/*The container will also serve as the SKY*/
+
+#stars{
+  position: absolute;
+  /*padding: 100px 0;*/
+  z-index: 1000;
+}
+
+@-webkit-keyframes moveStars {
+  0% {margin-top: 0;}
+  100% {margin-top: 50vh; -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes moveStars {
+  0% {margin-top: 0;}
+  100% {margin-top: 50vh; -moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes moveStars {
+  0% {margin-top: 0;}
+  100% {margin-top: 50vh; -o-transform: rotate(360deg)}
+}
+
+@media (min-width: 720px){
+  /*.person-image {
+    max-height: 280px;
+    overflow: hidden;
+    max-width: auto;
+  }
+*/}
+
 nav ul a {
     color: #000;
 }
+
+/*#cohort-bios {
+  height: 100vh;
+}*/
+
+/*charts*/
+
+.charts--content {
+  padding: 1%;
+  background-color: #eee;
+  text-align: center;
+}
+
+.charts--content div.card-content {
+  min-height: 10em;
+}
+
+.charts--content .card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em !important;
+  color: #5a7c92;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.charts--content .kpi {
+  font-size: 3em;
+  line-height: 1.5em;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.charts-row {
+  padding: 0;
+  margin: 0;
+}
+
 nav ul li a:hover {
     color: #6e6cb0;
     background-color: white;
@@ -195,7 +272,7 @@ nav ul li:hover {
    background-color: white;
 }
 nav .button-collapse i {
-    color: #000; 
+    color: #000;
 }
 nav, .btn {
     -webkit-box-shadow: none;
@@ -210,7 +287,7 @@ nav, .btn {
   text-transform: uppercase;
 }
 #search-bios {
-  height: 15vh
+  height: 15vh;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
     color: grey;
@@ -218,3 +295,4 @@ nav, .btn {
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{
     color: #6e6cb0;
 }
+
