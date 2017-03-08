@@ -219,6 +219,45 @@ footer a {
 nav ul a {
     color: #000;
 }
+
+/*#cohort-bios {
+  height: 100vh;
+}*/
+
+/*charts*/
+
+.charts--content {
+  padding: 1%;
+  background-color: #eee;
+  text-align: center;
+}
+
+.charts--content div.card-content {
+  min-height: 10em;
+}
+
+.charts--content .card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em !important;
+  color: #5a7c92;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.charts--content .kpi {
+  font-size: 3em;
+  line-height: 1.5em;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.charts-row {
+  padding: 0;
+  margin: 0;
+}
+
 nav ul li a:hover {
     color: #ab47bc;
     background-color: white;
@@ -227,7 +266,7 @@ nav ul li:hover {
    background-color: white;
 }
 nav .button-collapse i {
-    color: #000; 
+    color: #000;
 }
 nav, .btn {
     -webkit-box-shadow: none;
