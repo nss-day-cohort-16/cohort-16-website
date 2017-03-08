@@ -158,11 +158,12 @@ $(window).on('load', ()=>{
       let target = $(event.target);
       if (partyFlag == false) {
         partyFlag = true;
-        $('#stars').show();
+        make_it_rain();
         loadItems(partyFlag);
         changeFont("Spicy+Rice");
       } else {
         partyFlag = false;
+        stop_the_madness();
         loadItems(partyFlag);
         changeFont("Roboto"); 
       }
@@ -196,10 +197,10 @@ function Sound(source,volume,loop){
 
 make_it_rain = () => {
   let insertPoint = $('#stars');
-  for (let i = 0; i < 40; i++){
-    let rotateDeg = Math.random() * 90;
-    let sizeShape = Math.random() * 20 + 10;
-    let durationTime = Math.random() * 10 + 10;
+  for (let i = 0; i < 80; i++){
+    let rotateDeg = Math.random() * 45 + 5;
+    let sizeShape = Math.random() * 20 + 5;
+    let durationTime = Math.random() * 10 + 5;
     rotateDeg = rotateDeg + 'deg';
     let placeMent = Math.random() * 100;
     placeMent = placeMent + 'vw';
@@ -207,10 +208,11 @@ make_it_rain = () => {
     let greenColor = Math.floor(Math.random() * 255);
     let blueColor = Math.floor(Math.random() * 255);
     let newStar = document.createElement('div');
+    // newStar.innerText = "a";
     Object.assign(newStar.style, {
       'position': 'relative',
       'left': `${placeMent}`,
-      'color': `rgb(${redColor}, ${greenColor}, ${blueColor})`,
+      'background-color': `rgb(${redColor}, ${greenColor}, ${blueColor})`,
       'width': `${sizeShape}px`,
       'height': `${sizeShape}px`,
       '-moz-transform': `rotate(${rotateDeg})`,
@@ -225,3 +227,7 @@ make_it_rain = () => {
     insertPoint.append(newStar);
   }
 };
+
+stop_the_madness = () => {
+  $('#stars').html('');
+}

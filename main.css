@@ -184,15 +184,6 @@ footer a {
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 720px){
-  /*.person-image {
-    max-height: 280px;
-    overflow: hidden;
-    max-width: auto;
-  }
-*/}
-
 /*Lets start with the cloud formation rather*/
 /*The container will also serve as the SKY*/
 
@@ -204,17 +195,19 @@ footer a {
 
 @-webkit-keyframes moveStars {
   0% {margin-top: 0;}
-  100% {margin-top: 600px;}
+  100% {margin-top: 50vh; -webkit-transform: rotate(360deg);}
 }
+
 @-moz-keyframes moveStars {
   0% {margin-top: 0;}
-  100% {margin-top: 600px;}
+  100% {margin-top: 50vh; -moz-transform: rotate(360deg);}
 }
+
 @-o-keyframes moveStars {
   0% {margin-top: 0;}
-  100% {margin-top: 600px;}
+  100% {margin-top: 50vh; -o-transform: rotate(360deg)}
 }
-||||||| merged common ancestors
+
 @media (min-width: 720px){
   /*.person-image {
     max-height: 280px;
@@ -223,10 +216,6 @@ footer a {
   }
 */}
 
-/*#cohort-bios {
-  height: 100vh;
-}*/
-=======
 nav ul a {
     color: #000;
 }
@@ -255,4 +244,3 @@ nav, .btn {
 #search-bios {
   height: 15vh
 }
->>>>>>> master
