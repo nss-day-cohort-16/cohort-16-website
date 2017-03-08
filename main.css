@@ -3,7 +3,13 @@ body {
   height: 100%;
   background-color: white;
 }
+.profont {
+  font-family: 'Roboto';
+}
 
+.funfont {
+  font-family: 'Spicy Rice', cursive;
+}
 #logo {
   margin: 0 auto;
   margin-top: -20vh;
@@ -11,7 +17,6 @@ body {
 }
 
 .top-content--header {
-  background-image: url('img/pic/2016_11_29_GC15_0070_T.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -156,11 +161,11 @@ footer a {
     max-height: 80vh;
   }
 
-  .person-tile {
+  /*.person-tile {
     max-width: 340px;
     margin-left: auto;
     margin-right: auto;
-  }
+  }*/
 }
 
 @media (max-width: 720px) {
@@ -179,11 +184,8 @@ footer a {
   }
 }
 
-@media (min-width: 720px){
-  .person-image {
-    max-height: 280px;
-    overflow: hidden;
-  }
+nav ul a {
+    color: #000;
 }
 
 /*#cohort-bios {
@@ -192,7 +194,6 @@ footer a {
 
 /*charts*/
 
-
 .charts--content {
   padding: 1%;
   background-color: #eee;
@@ -200,7 +201,7 @@ footer a {
 }
 
 .charts--content div.card-content {
-  /*min-height: 9em;*/
+  min-height: 9em;
 }
 
 .charts--content .card-title {
@@ -223,4 +224,30 @@ footer a {
 .charts-row {
   padding: 0;
   margin: 0;
+}
+
+nav ul li a:hover {
+    color: #ab47bc;
+    background-color: white;
+}
+nav ul li:hover {
+   background-color: white;
+}
+nav .button-collapse i {
+    color: #000;
+}
+nav, .btn {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#sidenav-overlay {
+    z-index: 1;
+}
+.brand-logo {
+  color: black;
+  text-transform: uppercase;
+}
+#search-bios {
+  height: 15vh
 }

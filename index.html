@@ -6,29 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cohort 15 | Nashville Software School</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="gray.css">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Spicy+Rice" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link href="charts/css/d3.geomap.css" rel="stylesheet">
   </head>
   <body>
     <div id="main-wrapper">
 
-      <div class="top-content--header">
-        <img id="logo" src="img/cohort15.svg" alt="Cohort 15"/>
-        <span id="about-us" class="glyphicon glyphicon-chevron-down bounce" aria-hidden="true"></span>
+    <!-- Navigation Section -->
+    <div class="row" style="margin-bottom: 0px;">
+      <div class="navbar-fixed">
+        <nav style="background-color: rgba(255,255,255,0.8);">
+          <div class="nav-wrapper">
+             <a href="#" class="brand-logo black-text">Welcome to Cohort 16</a>
+            <ul id="main-nav" class="right hide-on-med-and-down center-align">
+              <li><a href="#search-bios">Search</a></li>
+              <li><a href="#cohort-bios">Bios</a></li>
+              <li><a href="#charts">Charts</a></li>
+              <li><a href="#tech">Technologies</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+              <li><a href="#search">Search</a></li>
+              <li><a href="#bios">Bios</a></li>
+              <li><a href="#charts">Charts</a></li>
+              <li><a href="#tech">Technologies</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse right-align"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
       </div>
+    </div> <!-- End of Nav -->
 
-    <button id='party-mode' type="button" value="partyModeOn" style="display:none">ENABLE PARTY MODE</button>
-      <div id="search-bios" class="row">
-        <div class="input-field col s6 offset-s1">
-              <input id="search" type="text" placeholder="Search for a student ...">
-              <label>Search for students</label>
-        </div>
-        <button id="search-button" class="waves-effect waves-light btn col s2 offset-s1">Search<i class="small material-icons">search</i></button>
+    <!-- Main header section -->
+    <div class="top-content--header">
+        <img id="logo" src="img/cohort15.svg" alt="Cohort 15"/>
+        <span id="about-us" class="bounce" aria-hidden="true"><i class="material-icons">keyboard_arrow_down</i></span>
+    </div> <!-- End of main header -->
+    <!-- FAB button -->
+    <div class="row" >
+      <div class="fixed-action-btn horizontal" id="party-fab">
+
+      </div> <!-- End of Fab -->
+    </div>
+    <!-- Search bios section -->
+    <div id="search-bios" class="row">
+    </div>
+    <div class="row">
+      <div class="row" id="search-section">
+      <div class="input-field col s6 offset-s1">
+            <input id="search" type="text" placeholder="Search for a student ...">
+            <label>Search for students</label>
       </div>
+      <button id="search-button" class="waves-effect waves-light btn col s3 offset-s1 valign-wrapper">Search <i class="small material-icons">search</i></button>
+      </div>
+    </div><!-- End of search -->
+    <!-- Student bios -->
+    <div class="container">
       <div id="cohort-bios" class="row">
       </div>
 
@@ -37,7 +73,7 @@
     <!-- KPIS -->
       <div class="row charts-row">
           <!-- GitHub Contributions -->
-          <div class="col s12 m4 l2">
+          <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-content">
                 <div class="card-title">GitHub Contributions</div>
@@ -46,7 +82,7 @@
             </div>
           </div>
           <!-- Networking Events -->
-          <div class="col s12 m4 l2">
+          <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-content">
                 <div class="card-title">Networking Events</div>
@@ -55,7 +91,7 @@
             </div>
           </div>
           <!-- Number of Board Games Played -->
-          <div class="col s12 m4 l2">
+          <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-content">
                 <div class="card-title">Number of Board Games Played</div>
@@ -64,7 +100,7 @@
             </div>
           </div>
           <!-- Sublime -->
-          <div class="col s12 m4 l2">
+          <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-content">
                 <div class="card-title">Percent of Sublime Users</div>
@@ -73,7 +109,7 @@
             </div>
           </div>
           <!-- Percent of Veterans -->
-          <div class="col s12 m4 l2">
+          <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-content">
                 <div class="card-title">Percent of Veterans</div>
@@ -82,10 +118,10 @@
             </div>
           </div>
           <!-- Percent Canadian -->
-          <div class="col s12 m4 l2">
+          <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-content">
-                <div class="card-title">Percent<br/>Canadian</div>
+                <div class="card-title">Percent Canadian</div>
                 <div class="kpi">4.3%</div>
               </div>
             </div>
@@ -96,7 +132,7 @@
         <!-- Pie Charts -->
           <div class="row charts-row">
               <!-- Percent of Guitar Players -->
-              <div class="col s12 m6 l4">
+              <div class="col s12 m6 l6">
                 <div class="card">
                   <div class="card-content">
                     <div class="card-title">Percent of Guitar Players</div>
@@ -105,19 +141,10 @@
                 </div>
               </div>
               <!-- Caffeine Preference -->
-              <div class="col s12 m6 l4">
+              <div class="col s12 m6 l6">
                 <div class="card">
                   <div class="card-content">
                     <div class="card-title">Caffeine Preference</div>
-                    <div class="kpi">pie chart</div>
-                  </div>
-                </div>
-              </div>
-              <!-- 2 v.s. 4 Spaces -->
-              <div class="col s12 m6 l4">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="card-title">2 v.s. 4 Spaces</div>
                     <div class="kpi">pie chart</div>
                   </div>
                 </div>
@@ -128,7 +155,7 @@
             <!-- Map and Bell Curves -->
               <div class="row charts-row">
                   <!-- Countries Visited -->
-                  <div class="col s12 m12 l6">
+                  <div class="col s12 m12 l12">
                     <div class="card">
                       <div class="card-content">
                         <div class="card-title">Countries Visited</div>
@@ -136,6 +163,11 @@
                       </div>
                     </div>
                   </div>
+
+            </div>
+
+            <!-- Bell Curves -->
+              <div class="row charts-row">
                   <!-- Age -->
                   <div class="col s12 m12 l6">
                     <div class="card">
@@ -145,10 +177,6 @@
                       </div>
                     </div>
                   </div>
-            </div>
-
-            <!-- Bell Curves -->
-              <div class="row charts-row">
                   <!-- Networking Events -->
                   <div class="col s12 m12 l6">
                     <div class="card">
@@ -168,79 +196,92 @@
                     </div>
                   </div>
 
+                  <!-- 2 v.s. 4 Spaces -->
+                  <div class="col s12 m12 l6">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="card-title">2 v.s. 4 Spaces</div>
+                        <div class="kpi">pie chart</div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
       </div>
 
 
     <div class='technologies--content'>
+    </div> <!-- End of student bios -->
+
+    <!-- Techsection -->
+    <div id="tech" class='technologies--content'>
       <img src="img/technologies.svg" alt="Technologies" id="technologies"/>
-      <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Angular.svg" alt="angular" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/azure.svg" alt="azure" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/dotnet.svg" alt="asp-net" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Bootstrap.svg" alt="bootstrap" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Bower.svg" alt="bower" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Browserify.svg" alt="browserify" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/CSS3.svg" alt="CSS" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Firebase.svg" alt="firebase" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Git.svg" alt="git" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Github.svg" alt="github" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Grunt.svg" alt="grunt" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Handlebars.svg" alt="handlebars" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/HTML5.svg" alt="html5" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Jasmine.svg" alt="jasmine" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/js.svg" alt="jslogo" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/jQuery.svg" alt="jquery" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/materialize.svg" alt="materialize" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/NPM.svg" alt="npm" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Sass.svg" alt="sass" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/SQLite.svg" alt="sqlite" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/Trello.svg" alt="trello" />
           </div>
-          <div class="col-lg-2 col-md-3 col-xs-4 tech-icon">
+          <div class="col l2 offset-l1 col m3 offset-m1 col s4 offset-s1 tech-icon">
             <img class="tech-img" src="img/logo/visual-studio.svg" alt="vscode" />
           </div>
         </div>
@@ -254,7 +295,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
-  <script src="https://npmcdn.com/jquery-gray@1.5.0/js/jquery.gray.min.js"></script>
+  <!-- <script src="https://npmcdn.com/jquery-gray@1.5.0/js/jquery.gray.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <script src="script.js"></script>
   <!-- charts -->
