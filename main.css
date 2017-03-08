@@ -196,7 +196,7 @@ footer a {
 #stars{
   position: absolute;
   /*padding: 100px 0;*/
-  z-index: 1000;
+  z-index: 99;
 }
 
 @-webkit-keyframes moveStars {
@@ -211,7 +211,7 @@ footer a {
 
 @-o-keyframes moveStars {
   0% {top: 0;}
-  100% {top: 100vh; -o-transform: rotate(360deg)}
+  100% {top: 100vh ; -o-transform: rotate(360deg)}
 }
 
 @media (min-width: 720px){
@@ -278,6 +278,7 @@ nav, .btn {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    z-index: 1000;
 }
 #sidenav-overlay {
     z-index: 1;
