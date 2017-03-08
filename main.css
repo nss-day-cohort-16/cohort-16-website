@@ -10,10 +10,14 @@ body {
 .funfont {
   font-family: 'Spicy Rice', cursive;
 }
-#logo {
+
+#main-logo,
+#party-logo {
   margin: 0 auto;
-  margin-top: -20vh;
-  max-width: 80%;
+  margin-top: -15vh;
+  width: 80%;
+  /*max-width: 80%;*/
+  /*width: 75vh;*/
 }
 
 .top-content--header {
@@ -212,3 +216,4 @@ nav, .btn {
 #search-bios {
   height: 15vh
 }
+

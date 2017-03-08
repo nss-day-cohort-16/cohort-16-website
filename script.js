@@ -1,5 +1,6 @@
 // let doges = new Audio("/img/logo/who_let_the_dogs_out.mp3");
 let partyFlag = false; //Set initial settings
+$('#party-logo').hide();
 
 $(window).on('load', ()=>{
   $(".button-collapse").sideNav(); //Initializes side nav
@@ -19,6 +20,8 @@ $(window).on('load', ()=>{
     
     if (target == false){
       $('.top-content--header').css('background-image', "url('img/pic/16Pro.jpg')");
+      $('#party-logo').hide();
+      $('#main-logo').show();
       $('.tooltipped').tooltip('remove');
       $('#party-fab').html('')
       $('#party-fab').html(`<a id="party-on" class="btn-floating btn-large indigo accent-1 tooltipped"  data-position="top" data-delay="50" data-tooltip="Time to party?"><i class="large material-icons">cake</i>
@@ -31,6 +34,8 @@ $(window).on('load', ()=>{
     }
     else {
       $('.top-content--header').css('background-image', "url('img/pic/16Party.jpg')");
+      $('#main-logo').hide();
+      $('#party-logo').show();
       $('.tooltipped').tooltip('remove');
       $('#party-fab').html('')
       $('#party-fab').html(`<a id="party-off" class="btn-floating btn-large pink accent-1 tooltipped"  data-position="left" data-delay="50" data-tooltip="Too much party?"><i class="large material-icons">school</i>
