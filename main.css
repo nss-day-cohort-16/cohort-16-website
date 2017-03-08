@@ -16,8 +16,10 @@ body {
   margin: 0 auto;
   margin-top: -15vh;
   width: 80%;
-  /*max-width: 80%;*/
-  /*width: 75vh;*/
+}
+
+.hidden {
+  display: none;
 }
 
 .top-content--header {

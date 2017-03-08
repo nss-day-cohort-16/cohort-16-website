@@ -34,6 +34,7 @@ $(window).on('load', ()=>{
       $('.top-content--header').css('background-image', "url('img/pic/16Party.jpg')");
       $('#main-logo').hide();
       $('#party-logo').show();
+      $('#party-logo').removeClass('hidden');
       $('.tooltipped').tooltip('remove');
       $('#party-fab').html('')
       $('#party-fab').html(`<a id="party-off" class="btn-floating btn-large pink accent-1 tooltipped"  data-position="left" data-delay="50" data-tooltip="Too much party?"><i class="large material-icons">school</i>
