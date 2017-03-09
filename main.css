@@ -196,22 +196,22 @@ footer a {
 #stars{
   position: absolute;
   /*padding: 100px 0;*/
-  z-index: 1000;
+  z-index: 99;
 }
 
 @-webkit-keyframes moveStars {
-  0% {margin-top: 0;}
-  100% {margin-top: 50vh; -webkit-transform: rotate(360deg);}
+  0% {top: 0;}
+  100% {top: 100vh; -webkit-transform: rotate(360deg);}
 }
 
 @-moz-keyframes moveStars {
-  0% {margin-top: 0;}
-  100% {margin-top: 50vh; -moz-transform: rotate(360deg);}
+  0% {top: 0;}
+  100% {top: 100vh; -moz-transform: rotate(360deg);}
 }
 
 @-o-keyframes moveStars {
-  0% {margin-top: 0;}
-  100% {margin-top: 50vh; -o-transform: rotate(360deg)}
+  0% {top: 0;}
+  100% {top: 100vh ; -o-transform: rotate(360deg)}
 }
 
 @media (min-width: 720px){
@@ -278,6 +278,7 @@ nav, .btn {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    z-index: 1000;
 }
 #sidenav-overlay {
     z-index: 1;
