@@ -217,10 +217,10 @@
     },
     {
       "name": "Zoe LeBlanc",
-      "githubLink": "",
-      "portfolioLink": "zoeleblanc.com",
-      "linkedInLink": "#",
-      "aboutMe": "TBD",
+      "githubLink": "https://github.com/ZoeLeBlanc",
+      "portfolioLink": "http://zoeleblanc.com/",
+      "linkedInLink": "https://www.linkedin.com/in/zoe-leblanc",
+      "aboutMe": "Hi! I'm a historian who discovered a love for writing code. I'm currently finishing up my dissertation at Vanderbilt, and am looking to futher my development skills with a great team. I love solving problems, sharing ideas, and learning new things. I run on curiosity, passion, and ☕.",
       "professionalPic": "img/pic/zoePro.jpg",
       "personalityPic": "img/pic/zoeFun.jpg"
     }

@@ -19,6 +19,7 @@ $(window).on('load', ()=>{
   function partyMode(target){
     
     if (target == false){
+      // $('.top-content--header').toggleClass('grayscale');
       $('.top-content--header').css('background-image', "url('img/pic/16Pro.jpg')");
       $('#party-logo').hide();
       $('#main-logo').show();
@@ -30,7 +31,9 @@ $(window).on('load', ()=>{
           // console.log(event);
           $(this).tooltip();
       });
-    } else {
+    }
+    else {
+      // $('.top-content--header').toggleClass('grayscale');
       $('.top-content--header').css('background-image', "url('img/pic/16Party.jpg')");
       $('#main-logo').hide();
       $('#party-logo').show();
@@ -61,29 +64,32 @@ $(window).on('load', ()=>{
   function getItem(items, partyFlag) {
     var list_of_people = '';
     $.each(items, (index, person)=>{
-      let pictureChoice = '';
-      if (partyFlag) {
-        pictureChoice = person.personalityPic;
-      } else {
-        pictureChoice = person.professionalPic;
-      }
-      list_of_people += `
-        <div id="card_person" class="col s10 offset-s1 col m4 offset-m1 col l3">
-          <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator person-image" src="${pictureChoice}" alt="${person.name}">
-             <span class="card-title activator">${person.name}</i></span>
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
-            <p><a href="${person.githubLink}"><i class="fa fa-github fa-lg"></i></a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">${person.name}<i class="material-icons right">close</i></span>
-            <p>${person.aboutMe}</p>
-          </div>
-          </div>
-        </div>`;
+        let pictureChoice = '';
+        if (partyFlag) {
+          pictureChoice = person.personalityPic;
+        } else {
+          pictureChoice = person.professionalPic;
+        }
+        list_of_people += `
+          <div id="card_person" class="col s10 offset-s1 col m4 offset-m1 col l3">
+            <div class="card sticky-action hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator person-image" src="${pictureChoice}" alt="${person.name}">
+               <span class="card-title activator">${person.name}</i></span>
+            </div>
+            <div class="card-action valign-wrapper center-align">
+              <span class="card-title activator grey-text text-darken-4 valign"></span>
+              <p class=""><a class="col s2 valign" href="${person.githubLink}"><i class="fa fa-github fa-lg"></i></a>
+                <a class="col s2 valign" href="${person.portfolioLink}"><i class="fa fa-globe fa-lg"></i></a>
+                <a class="col s2 valign" href="${person.linkedInLink}"><i class="fa fa-linkedin fa-lg"></i></a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">${person.name}<i class="material-icons right">close</i></span>
+              <p>${person.aboutMe}</p>
+            </div>
+            </div>
+          </div>`;
     });
     return $( list_of_people);
   }
