@@ -222,7 +222,7 @@ make_it_rain = () => {
     let newStar = document.createElement('div');
     // newStar.innerText = "a";
     Object.assign(newStar.style, {
-      'position': 'relative',
+      'position': 'fixed',
       'left': `${placeMent}`,
       'background-color': `rgb(${redColor}, ${greenColor}, ${blueColor})`,
       'width': `${sizeShape}px`,
