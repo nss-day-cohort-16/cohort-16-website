@@ -146,6 +146,12 @@ footer a {
   }
 }
 
+#party-fab{
+  z-index: 98;
+}
+#search-button{
+  z-index:97;
+}
 /*Lets start with the cloud formation rather*/
 /*The container will also serve as the SKY*/
 
