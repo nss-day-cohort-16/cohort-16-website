@@ -79,9 +79,9 @@ $(window).on('load', ()=>{
             </div>
             <div class="card-action valign-wrapper center-align">
               <span class="card-title activator grey-text text-darken-4 valign"></span>
-              <p class=""><a class="col s2 valign" href="${person.githubLink}"><i class="fa fa-github fa-lg"></i></a>
-                <a class="col s2 valign" href="${person.portfolioLink}"><i class="fa fa-globe fa-lg"></i></a>
-                <a class="col s2 valign" href="${person.linkedInLink}"><i class="fa fa-linkedin fa-lg"></i></a>
+              <p class=""><a class="col s2 valign" href="${person.githubLink}" target='_blank'><i class="fa fa-github fa-lg"></i></a>
+                <a class="col s2 valign" href="${person.portfolioLink}" target="_blank"><i class="fa fa-globe fa-lg"></i></a>
+                <a class="col s2 valign" href="${person.linkedInLink}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
               </p>
             </div>
             <div class="card-reveal">
