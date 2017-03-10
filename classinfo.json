@@ -3,8 +3,8 @@
     {
       "name": "Abby Fleming",
       "githubLink": "https://github.com/abbyfleming",
-      "portfolioLink": "#",
-      "linkedInLink": "linkedin.com.com/in/abbyfleming",
+      "portfolioLink": "https://www.abbywritescode.com",
+      "linkedInLink": "https://linkedin.com/in/abbyfleming",
       "aboutMe": "I'm a wedding photographer turned full stack developer. Over a hundred weddings later, I'm looking forward to reclaiming my weekends! Coding allows me to be creative and analytical. ",
       "professionalPic": "img/pic/abbyPro.jpg",
       "personalityPic": "img/pic/abbyFun.jpg"
@@ -30,7 +30,7 @@
     {
       "name": "Ben Marks",
       "githubLink": "https://github.com/Onodric",
-      "portfolioLink": "https://belvedmarks4.com",
+      "portfolioLink": "http://www.belvedmarks4.com",
       "linkedInLink": "https://www.linkedin.com/in/belve-marks-211a79132/",
       "aboutMe": "I am former welder, artist, actor, CAD operator, surveyor, and civil engineering technician. I love my wife, my daughters, my dogs, Nashville and solving new puzzles!",
       "professionalPic": "img/pic/benPro.jpg",
@@ -38,18 +38,18 @@
     },
     {
       "name": "Dani Adkins",
-      "githubLink": "github.com/itsdanirenae",
-      "portfolioLink": "www.danielleadkins.com",
-      "linkedInLink": "www.linkedin.com/in/danielle-adkins-63212935",
+      "githubLink": "https://github.com/itsdanirenae",
+      "portfolioLink": "http://www.danielleadkins.com",
+      "linkedInLink": "https://www.linkedin.com/in/danielle-adkins-63212935",
       "aboutMe": "A lover of technology, travel, books and the outdoors. 'Awesome spontaneous dance moves' -Ike, C16; 'You're from Indiana. Shouldn't you be funny?' -Shawn, C16; 'Your docstrings are grand!' -Ben, C16",
       "professionalPic": "img/pic/daniPro.jpg",
       "personalityPic": "img/pic/daniFun.jpg"
     },
     {
       "name": "Drew Martin",
-      "githubLink": "#",
-      "portfolioLink": "#",
-      "linkedInLink": "#",
+      "githubLink": "https://github.com/dmart331",
+      "portfolioLink": "https://dmart331.github.io",
+      "linkedInLink": "https://www.linkedin.com/in/drew-martin-230ba89a/",
       "aboutMe": "I have always had a passion for problem-solving. Coming from an automotive repair background, coding is the perfect mixture of complex problem solving, and creative design. I find enjoyment out of taking a client's idea and making it come to life using code.",
       "professionalPic": "img/pic/drewPro.jpg",
       "personalityPic": "img/pic/drewFun.jpg"
@@ -57,7 +57,7 @@
     {
       "name": "Ike Nwaelele",
       "githubLink": "https://github.com/consumerike",
-      "portfolioLink": "consumerike.github.io",
+      "portfolioLink": "https://consumerike.github.io",
       "linkedInLink": "https://www.linkedin.com/in/nwaelele",
       "aboutMe": "Smiler, fosterer of kind teams, and obsessed w/ growing. I spent 6 years in tech as a PM before channeling my inner-nerd for a s/w immersion. Ultimately, I seek to bridge my love for strategy & tech!",
       "professionalPic": "img/pic/ikePro.jpg",
@@ -75,7 +75,7 @@
     {
       "name": "Joey Kirby",
       "githubLink": "https://github.com/jokirby",
-      "portfolioLink": "joeykirby.com",
+      "portfolioLink": "http://joeykirby.com",
       "linkedInLink": "https://www.linkedin.com/in/joey-kirby-5614a028/",
       "aboutMe": "A South African-born Canadian-American business magnate, investor, engineer, and inventor. Founder, CEO, and CTO of SpaceX; co-founder, CEO, and product architect of Tesla Inc.; co-founder and chairma",
       "professionalPic": "img/pic/joeyPro.jpg",
@@ -83,9 +83,9 @@
     },
     {
       "name": "Julia Kim-Chung",
-      "githubLink": "#",
-      "portfolioLink": "juliakimchung.github.io ",
-      "linkedInLink": "www.linkedin.com/in/julia-kim-chung-a85502134/",
+      "githubLink": "https://github.com/juliakimchung",
+      "portfolioLink": "https://juliakimchung.github.io ",
+      "linkedInLink": "https://www.linkedin.com/in/julia-kim-chung-a85502134/",
       "aboutMe": "Previously having worked in the hospitality management, Absolutely thrilled to use problem solving skills with my mathematically driven logical sense in the programming every day",
       "professionalPic": "img/pic/juliaPro.jpg",
       "personalityPic": "img/pic/juliaFun.jpg"
@@ -110,8 +110,8 @@
     },
     {
       "name": "Matthew McCord",
-      "githubLink": "github.com/mccordgh",
-      "portfolioLink": "mccordgh.github.io",
+      "githubLink": "https://github.com/mccordgh",
+      "portfolioLink": "http://mccordinator.cool",
       "linkedInLink": "https://www.linkedin.com/in/mccordinator/",
       "aboutMe": "I spent most of my post high school graduation time working on a career in music, while still keeping up on my coding hobby, and now I am going full force in to the world of software development.",
       "professionalPic": "img/pic/mattPro.jpg",
@@ -138,17 +138,17 @@
     {
       "name": "Peter Staggs",
       "githubLink": "#",
-      "portfolioLink": "#",
+      "portfolioLink": "http://peterstaggs.com",
       "linkedInLink": "#",
       "aboutMe": "#",
       "professionalPic": "img/pic/petePro.jpg",
       "personalityPic": "img/pic/peteFun.jpg"
     },    {
       "name": "Richard Whitfield",
-      "githubLink": "#",
-      "portfolioLink": "#",
-      "linkedInLink": "#",
-      "aboutMe": "#",
+      "githubLink": "https://github.com/rtwhitfield84",
+      "portfolioLink": "http://methegalaxy.com",
+      "linkedInLink": "https://linkedIn.com/in/rtwhitfield84",
+      "aboutMe": "I make music with Javascript and Python!",
       "professionalPic": "img/pic/richardPro.jpg",
       "personalityPic": "img/pic/richardFun.jpg"
     },
@@ -174,7 +174,7 @@
       "name": "Shawn Paul Mitchell",
       "githubLink": "#",
       "portfolioLink": "#",
-      "linkedInLink": "#",
+      "linkedInLink": "https://www.linkedin.com/in/shawmit/",
       "aboutMe": "#",
       "professionalPic": "img/pic/seanPro.jpg",
       "personalityPic": "img/pic/seanFun.jpg"
@@ -199,8 +199,8 @@
     },
     {
       "name": "Whitney Cormack",
-      "githubLink": "github.com/whitneycormack",
-      "portfolioLink": "WhitneyCormack.github.io",
+      "githubLink": "https://github.com/whitneycormack",
+      "portfolioLink": "https://WhitneyCormack.github.io",
       "linkedInLink": "https://www.linkedin.com/in/whitneycormack",
       "aboutMe": "#",
       "professionalPic": "img/pic/whitneyPro.jpg",
