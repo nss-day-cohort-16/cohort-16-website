@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Spicy+Rice" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="main.css">
     <link href="charts/css/d3.geomap.css" rel="stylesheet">
   </head>
@@ -137,41 +137,50 @@
 
         <!-- Pie Charts -->
           <div class="row charts-row">
-              <!-- Percent of Guitar Players -->
-              <div class="col s12 m6 l4">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="card-title">Percent of Guitar Players</div>
-                    <div class="kpi">pie chart</div>
+            <!-- Necessary scripts for pie chart functionality - Mark Ellis -->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+            <script src="/pie_scripts/d3pie.min.js"></script>
+            <!-- Percent of Guitar Players -->
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-title">Percent of Guitar Players</div>
+                  <div class="kpi" id="pieChart">
+                    <script type="text/javascript" src="/pie_scripts/guitar_pie.js"></script>
                   </div>
                 </div>
               </div>
-              <!-- Caffeine Preference -->
-              <div class="col s12 m6 l4">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="card-title">Caffeine Preference</div>
-                    <div class="kpi">pie chart</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 2 v.s. 4 Spaces -->
-              <div class="col s12 m6 l4">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="card-title">2 v.s. 4 Spaces</div>
-                    <div class="kpi">pie chart</div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+            <!-- Caffeine Preference -->
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-title">Caffeine Preference</div>
+                  <div class="kpi" id="caffeinePieChart">
+                    <script type="text/javascript" src="/pie_scripts/caffeine_pie.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 vs 4 Space Indentation -->
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-title">2 vs 4 Space Indentation</div>
+                  <div class="kpi" id="spacePieChart">
+                    <script type="text/javascript" src="/pie_scripts/space_pie.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
             <!-- Map and Bell Curves -->
               <div class="row charts-row">
                 <!-- Countries Visited -->
-                <div class="col s12 m12 l6">
+                <div class="col s12 m12 l12">
                   <div class="card">
                     <div class="card-content">
                       <div class="card-title">Countries Visited</div>
@@ -180,7 +189,7 @@
                   </div>
                 </div>
                 <!-- Age -->
-                <div class="col s12 m12 l6">
+<!--                 <div class="col s12 m12 l6">
                   <div class="card">
                     <div class="card-content">
                       <div class="card-title">Age</div>
@@ -190,27 +199,27 @@
                 </div>
 
                </div>
-
+ -->
             <!-- Bell Curves -->
-              <div class="row charts-row">
+              <!-- <div class="row charts-row"> -->
                 <!-- Networking Events -->
-                <div class="col s12 m12 l6">
+                <!-- <div class="col s12 m12 l6">
                   <div class="card">
                     <div class="card-content">
                       <div class="card-title">Networking Events</div>
                       <div class="kpi">bell curve</div>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- Commute Time -->
-                <div class="col s12 m12 l6">
+                <!-- <div class="col s12 m12 l6">
                   <div class="card">
                     <div class="card-content">
                       <div class="card-title">Commute Time</div>
                       <div class="kpi">bell curve</div>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
 
                </div>
@@ -302,7 +311,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <script src="script.js"></script>
   <!-- charts -->
