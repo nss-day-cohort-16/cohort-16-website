@@ -18,66 +18,66 @@
     <div id="stars">
 
     </div>
-    <div id="main-wrapper">
+    <div class="main">
 
-    <!-- Navigation Section -->
-    <div class="row" style="margin-bottom: 0px;">
-      <div class="navbar-fixed">
-        <nav style="background-color: rgba(255,255,255,0.8);">
-          <div class="nav-wrapper">
-             <a style="margin-left:1em;" href="#" class="black-text flow-text">Welcome to Cohort 16</a>
-            <ul id="main-nav" class="right hide-on-med-and-down center-align">
-              <li><a href="#search-bios">Search</a></li>
-              <li><a href="#cohort-bios">Bios</a></li>
-              <li><a href="#charts">Charts</a></li>
-              <li><a href="#tech">Technologies</a></li>
-            </ul>
-            <ul id="slide-out" class="side-nav">
-              <li><a href="#search-bios">Search</a></li>
-              <li><a href="#cohort-bios">Bios</a></li>
-              <li><a href="#charts">Charts</a></li>
-              <li><a href="#tech">Technologies</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse right-align"><i class="material-icons">menu</i></a>
-          </div>
-        </nav>
+      <!-- Navigation Section -->
+      <div class="row" style="margin-bottom: 0px;">
+        <div class="navbar-fixed">
+          <nav style="background-color: rgba(255,255,255,0.8);">
+            <div class="nav-wrapper">
+               <a style="margin-left:1em;" href="#" class="black-text flow-text">Welcome to NSS Cohort 16</a>
+              <ul id="main-nav" class="right hide-on-med-and-down center-align">
+                <li><a href="#search-bios">Search</a></li>
+                <li><a href="#cohort-bios">Bios</a></li>
+                <li><a href="#charts">Charts</a></li>
+                <li><a href="#tech">Technologies</a></li>
+              </ul>
+              <ul id="slide-out" class="side-nav">
+                <li><a href="#search-bios">Search</a></li>
+                <li><a href="#cohort-bios">Bios</a></li>
+                <li><a href="#charts">Charts</a></li>
+                <li><a href="#tech">Technologies</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse right-align"><i class="material-icons">menu</i></a>
+            </div>
+          </nav>
+        </div>
+      </div> <!-- End of Nav -->
+
+      <!-- Main header section -->
+      <div class="top-content--header">
+          <img id="main-logo" src="img/cohort16.png" alt="Cohort 16"/>
+          <img id="party-logo" class='hidden' src="img/cohort16_party.png" alt="Cohort 16 Party Mode"/>
+          <span id="about-us" class="bounce" aria-hidden="true"><i class="material-icons">keyboard_arrow_down</i></span>
+      </div> <!-- End of main header -->
+      <!-- FAB button -->
+      <div class="row" >
+        <div class="fixed-action-btn horizontal" id="party-fab">
+
+        </div> <!-- End of Fab -->
       </div>
-    </div> <!-- End of Nav -->
-
-    <!-- Main header section -->
-    <div class="top-content--header">
-        <img id="main-logo" src="img/cohort16.png" alt="Cohort 16"/>
-        <img id="party-logo" class='hidden' src="img/cohort16_party.png" alt="Cohort 16 Party Mode"/>
-        <span id="about-us" class="bounce" aria-hidden="true"><i class="material-icons">keyboard_arrow_down</i></span>
-    </div> <!-- End of main header -->
-    <!-- FAB button -->
-    <div class="row" >
-      <div class="fixed-action-btn horizontal" id="party-fab">
-
-      </div> <!-- End of Fab -->
-    </div>
-    <!-- Search bios section -->
-    <div id="search-bios" class="row">
-    </div>
-    <div class="row">
-      <div class="row" id="search-section">
-      <div class="input-field col s6 offset-s1">
-            <input id="search" type="text" placeholder="Search for a student ...">
-            <label>Search for students</label>
+      <!-- Search bios section -->
+      <div id="search-bios" class="row">
       </div>
-      <button id="search-button" class="waves-effect waves-light btn col s3 offset-s1 valign-wrapper grey">Search <i class="small material-icons">search</i></button>
-      </div>
-    </div><!-- End of search -->
-    <!-- Student bios -->
-    <div class="container">
-      <div id="cohort-bios" class="row">
-      </div>
-    </div> <!-- End of student bios -->
+      <div class="row">
+        <div class="row" id="search-section">
+        <div class="input-field col s6 offset-s1">
+              <input id="search" type="text" placeholder="Search for a student ...">
+              <label>Search for students</label>
+        </div>
+        <button id="search-button" class="waves-effect waves-light btn col s3 offset-s1 valign-wrapper grey">Search <i class="small material-icons">search</i></button>
+        </div>
+      </div><!-- End of search -->
+      <!-- Student bios -->
+      <div class="container">
+        <div id="cohort-bios" class="row">
+        </div>
+      </div> <!-- End of student bios -->
 
-    <div id="charts" class='charts--content'>
+      <div id="charts" class='charts--content'>
 
-    <!-- KPIS -->
-      <div class="row charts-row">
+      <!-- KPIS -->
+        <div class="row charts-row">
           <!-- GitHub Contributions -->
           <div class="col s12 m4 l2">
             <div class="card">
@@ -135,175 +135,180 @@
 
         </div>
 
-        <!-- Pie Charts -->
-          <div class="row charts-row">
-            <!-- Necessary scripts for pie chart functionality - Mark Ellis -->
-            <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
-            <script src="/pie_scripts/d3pie.min.js"></script>
-            <!-- Percent of Guitar Players -->
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Percent of Guitar Players</div>
-                  <div class="kpi" id="pieChart">
-                    <script type="text/javascript" src="/pie_scripts/guitar_pie.js"></script>
-                  </div>
+      <!-- Pie Charts -->
+        <div class="row charts-row">
+          <!-- Necessary scripts for pie chart functionality - Mark Ellis -->
+          <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+          <script src="/pie_scripts/d3pie.min.js"></script>
+          <!-- Percent of Guitar Players -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Percent of Guitar Players</div>
+                <div class="kpi" id="pieChart">
+                  <script type="text/javascript" src="/pie_scripts/guitar_pie.js"></script>
                 </div>
               </div>
             </div>
-            <!-- Caffeine Preference -->
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">Caffeine Preference</div>
-                  <div class="kpi" id="caffeinePieChart">
-                    <script type="text/javascript" src="/pie_scripts/caffeine_pie.js"></script>
-                  </div>
+          </div>
+          <!-- Caffeine Preference -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Caffeine Preference</div>
+                <div class="kpi" id="caffeinePieChart">
+                  <script type="text/javascript" src="/pie_scripts/caffeine_pie.js"></script>
                 </div>
               </div>
             </div>
-
-            <!-- 2 vs 4 Space Indentation -->
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-title">2 vs 4 Space Indentation</div>
-                  <div class="kpi" id="spacePieChart">
-                    <script type="text/javascript" src="/pie_scripts/space_pie.js"></script>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
-            <!-- Map and Bell Curves -->
-              <div class="row charts-row">
-                <!-- Countries Visited -->
-                <div class="col s12 m12 l12">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="card-title">Countries Visited</div>
-                      <div id="map"></div>
-                    </div>
-                  </div>
+          <!-- 2 vs 4 Space Indentation -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">2 vs 4 Space Indentation</div>
+                <div class="kpi" id="spacePieChart">
+                  <script type="text/javascript" src="/pie_scripts/space_pie.js"></script>
                 </div>
-                <!-- Age -->
-<!--                 <div class="col s12 m12 l6">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="card-title">Age</div>
-                      <div class="kpi">bell curve</div>
-                    </div>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
 
-               </div>
- -->
-            <!-- Bell Curves -->
-              <!-- <div class="row charts-row"> -->
-                <!-- Networking Events -->
-                <!-- <div class="col s12 m12 l6">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="card-title">Networking Events</div>
-                      <div class="kpi">bell curve</div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- Commute Time -->
-                <!-- <div class="col s12 m12 l6">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="card-title">Commute Time</div>
-                      <div class="kpi">bell curve</div>
-                    </div>
-                  </div>
-                </div> -->
+        </div>
 
-
-               </div>
+      <!-- Map and Bell Curves -->
+        <div class="row charts-row">
+          <!-- Countries Visited -->
+          <div class="col s12 m12 l12">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Countries Visited</div>
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
+          <!-- Age -->
+  <!--    <div class="col s12 m12 l6">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Age</div>
+                <div class="kpi">bell curve</div>
+              </div>
+            </div>
+          </div>
+  -->
+      <!-- Bell Curves -->
+        <!-- <div class="row charts-row"> -->
+          <!-- Networking Events -->
+          <!-- <div class="col s12 m12 l6">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Networking Events</div>
+                <div class="kpi">bell curve</div>
+              </div>
+            </div>
+          </div> -->
+          <!-- Commute Time -->
+          <!-- <div class="col s12 m12 l6">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Commute Time</div>
+                <div class="kpi">bell curve</div>
+              </div>
+            </div>
+          </div> -->
 
 
-    <div class='technologies--content'>
+                 
 
 
-    <!-- Techsection -->
-    <div id="tech" class='technologies--content container'>
-      <img src="img/technologies.svg" alt="Technologies" id="technologies"/>
-        <div class="row">
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Angular.svg" alt="AngularJS" data-position="top" data-tooltip="AngularJS" />
+      <div class='technologies--content'>
+
+
+      <!-- Techsection -->
+        <div id="tech" class='technologies--content container'>
+          <img src="img/technologies.svg" alt="Technologies" id="technologies"/>
+          <div class="row">
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Angular.svg" alt="AngularJS" data-position="top" data-tooltip="AngularJS" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/python-original.svg" alt="Python" data-position="top" data-tooltip="Python"/>
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/django-plain.svg" alt="Django" data-position="top" data-tooltip="Django" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Bootstrap.svg" alt="Bootstrap" data-position="top" data-tooltip="Bootstrap" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Bower.svg" alt="Bower" data-position="top" data-tooltip="Bower" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Browserify.svg" alt="Browserify" data-position="top" data-tooltip="Browserify" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/CSS3.svg" alt="CSS3" data-position="top" data-tooltip="CSS3" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Firebase.svg" alt="Firebase" data-position="top" data-tooltip="Firebase" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Git.svg" alt="Git" data-position="top" data-tooltip="Git" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Github.svg" alt="Github" data-position="top" data-tooltip="Github" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Grunt.svg" alt="Grunt" data-position="top" data-tooltip="Grunt" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Handlebars.svg" alt="Handlebars" data-position="top" data-tooltip="Handlebars" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/HTML5.svg" alt="HTML5" data-position="top" data-tooltip="HTML5" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/rest.png" alt="Django REST Framework" data-position="top" data-tooltip="Django REST Framework" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/js.svg" alt="JavaScript ES6" data-position="top" data-tooltip="JavaScript / ES6" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/jQuery.svg" alt="jQuery" data-position="top" data-tooltip="jQuery" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/materialize.svg" alt="Materialize" data-position="top" data-tooltip="Materialize" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/NPM.svg" alt="Node.js Package Manager" data-position="top" data-tooltip="Node Package Manager" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Sass.svg" alt="Sass" data-position="top" data-tooltip="Sass" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/SQLite.svg" alt="SQLite3" data-position="top" data-tooltip="SQLite3" />
+            </div>
+            <div class="col l3 col m3 col s4 offset-s1 tech-icon">
+              <img class="tech-img tooltipped" src="img/logo/Trello.svg" alt="Trello" data-position="top" data-tooltip="Trello" />
+            </div>
           </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/python-original.svg" alt="Python" data-position="top" data-tooltip="Python"/>
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/django-plain.svg" alt="Django" data-position="top" data-tooltip="Django" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Bootstrap.svg" alt="Bootstrap" data-position="top" data-tooltip="Bootstrap" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Bower.svg" alt="Bower" data-position="top" data-tooltip="Bower" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Browserify.svg" alt="Browserify" data-position="top" data-tooltip="Browserify" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/CSS3.svg" alt="CSS3" data-position="top" data-tooltip="CSS3" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Firebase.svg" alt="Firebase" data-position="top" data-tooltip="Firebase" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Git.svg" alt="Git" data-position="top" data-tooltip="Git" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Github.svg" alt="Github" data-position="top" data-tooltip="Github" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Grunt.svg" alt="Grunt" data-position="top" data-tooltip="Grunt" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Handlebars.svg" alt="Handlebars" data-position="top" data-tooltip="Handlebars" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/HTML5.svg" alt="HTML5" data-position="top" data-tooltip="HTML5" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/rest.png" alt="Django REST Framework" data-position="top" data-tooltip="Django REST Framework" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/js.svg" alt="JavaScript ES6" data-position="top" data-tooltip="JavaScript / ES6" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/jQuery.svg" alt="jQuery" data-position="top" data-tooltip="jQuery" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/materialize.svg" alt="Materialize" data-position="top" data-tooltip="Materialize" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/NPM.svg" alt="Node.js Package Manager" data-position="top" data-tooltip="Node Package Manager" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Sass.svg" alt="Sass" data-position="top" data-tooltip="Sass" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/SQLite.svg" alt="SQLite3" data-position="top" data-tooltip="SQLite3" />
-          </div>
-          <div class="col l3 col m3 col s4 offset-s1 tech-icon">
-            <img class="tech-img tooltipped" src="img/logo/Trello.svg" alt="Trello" data-position="top" data-tooltip="Trello" />
-          </div>
-        <!--</div>-->
+        </div>
       </div>
     </div>
-    <footer>
-      <a href="http://www.nashvillesoftwareschool.com">Nashville Software School</a>
+    <footer class="white">
+      <div class="row valign-wrapper">
+        <a href="http://www.nashvillesoftwareschool.com" class="col s12 valign center-align">
+          <h5 class="grey-text">Built at Nashville Software School</h5>
+          <p class="grey-text">Thanks to Steve Brownlee, Hannah Hall, Greg Korte, Brenda Long, Joe Shephard, Zoe Ames, &amp; John Wark.</p>
+        </a>
+      </div>
     </footer>
-  </div>
+  
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="

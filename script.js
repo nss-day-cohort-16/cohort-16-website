@@ -99,7 +99,6 @@ $(window).on('load', ()=>{
       $.ajax({
         url: "classinfo.json",
       }).done(function(response) {
-        console.log(response);
         let users = [];
         Object.keys(response).forEach( (key)=>{
           users.push(response[key]);
